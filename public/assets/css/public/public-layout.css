@@ -1,0 +1,505 @@
+:root {
+    --color-bg: #ffffff;
+    --color-surface: #f4f9fd;
+    --color-surface-2: #edf6fc;
+    --color-border: #d8e8f2;
+    --color-text: #143447;
+    --color-text-soft: #5f7484;
+    --color-primary: #4dbbe9;
+    --color-primary-dark: #2d96c5;
+    --color-primary-deep: #1c6f97;
+    --color-accent: #19c18d;
+    --color-accent-dark: #119168;
+    --color-white: #ffffff;
+    --shadow-soft: 0 14px 35px rgba(20, 52, 71, 0.08);
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+    --max-width: 1180px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+.container {
+    width: min(calc(100% - 2rem), var(--max-width));
+    margin: 0 auto;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid rgba(20, 52, 71, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    color: var(--color-text);
+}
+
+.logo-mark {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #ffffff 0%, #eef8fd 100%);
+    box-shadow: inset 0 0 0 1px rgba(45, 150, 197, 0.16);
+    overflow: hidden;
+}
+
+.arc {
+    position: absolute;
+    display: block;
+    height: 8px;
+    border-radius: 999px;
+    transform: rotate(-28deg);
+}
+
+.arc-blue {
+    background: var(--color-primary);
+}
+
+.arc-green {
+    background: var(--color-accent);
+}
+
+.arc-blue-top {
+    width: 34px;
+    top: 10px;
+    left: 10px;
+}
+
+.arc-green-middle {
+    width: 39px;
+    top: 24px;
+    left: 8px;
+}
+
+.arc-blue-bottom {
+    width: 32px;
+    bottom: 10px;
+    right: 8px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.brand-name {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.brand-sub {
+    margin-top: 0.3rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.22rem;
+    color: var(--color-primary-deep);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    flex-wrap: wrap;
+}
+
+/* -----------------------------------------------------------
+   Links del menú principal
+   - Estado normal: celeste suave + texto oscuro
+   - Hover: botón más visible
+   - Activo: azul principal + texto blanco
+----------------------------------------------------------- */
+.menu .nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.72rem 1rem;
+    border-radius: 999px;
+    background: rgba(77, 187, 233, 0.12);
+    color: var(--color-text);
+    font-weight: 700;
+    line-height: 1;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.menu .nav-link:hover {
+    background: rgba(77, 187, 233, 0.20);
+    color: var(--color-primary-deep);
+    transform: translateY(-1px);
+}
+
+.menu .nav-link:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(77, 187, 233, 0.22);
+}
+
+/* -----------------------------------------------------------
+   Estado activo general
+----------------------------------------------------------- */
+.menu .nav-link.is-current {
+    background: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 10px 22px rgba(77, 187, 233, 0.22);
+}
+
+.menu .nav-link.is-current:hover {
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+/* -----------------------------------------------------------
+   Cotizar en estado normal:
+   verde suave, pero más notorio
+----------------------------------------------------------- */
+.menu .nav-link-quote {
+    background: rgba(25, 193, 141, 0.22);
+    color: var(--color-text);
+}
+
+.menu .nav-link-quote:hover {
+    background: rgba(25, 193, 141, 0.30);
+    color: var(--color-accent-dark);
+}
+
+/* -----------------------------------------------------------
+   Cuando Cotizar está activa, usa el mismo azul
+   de las demás opciones activas
+----------------------------------------------------------- */
+.menu .nav-link-quote.is-current {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.menu .nav-link-quote.is-current:hover {
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+.menu-toggle {
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 14px;
+    background: var(--color-surface);
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+}
+
+.menu-toggle span {
+    position: absolute;
+    left: 12px;
+    width: 24px;
+    height: 2.5px;
+    background: var(--color-primary-deep);
+    border-radius: 999px;
+    transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+    top: 16px;
+}
+
+.menu-toggle span:nth-child(2) {
+    top: 23px;
+}
+
+.menu-toggle span:nth-child(3) {
+    top: 30px;
+}
+
+.menu-toggle.is-open span:nth-child(1) {
+    top: 23px;
+    transform: rotate(45deg);
+}
+
+.menu-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.is-open span:nth-child(3) {
+    top: 23px;
+    transform: rotate(-45deg);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.88rem 1.45rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-dark);
+}
+
+.btn-secondary {
+    background: rgba(77, 187, 233, 0.14);
+    color: var(--color-primary-deep);
+}
+
+.btn-secondary:hover {
+    background: rgba(77, 187, 233, 0.22);
+}
+
+.btn-nav {
+    background: var(--color-surface);
+    color: var(--color-primary-deep) !important;
+    padding-inline: 1rem;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.alt {
+    background: var(--color-surface);
+}
+
+.tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--color-primary-deep);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    line-height: 1.15;
+    color: var(--color-text);
+}
+
+h2 {
+    font-size: clamp(1.85rem, 3vw, 2.8rem);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+}
+
+p,
+li {
+    color: var(--color-text-soft);
+}
+
+.section-heading {
+    max-width: 760px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+.section-heading.left {
+    text-align: left;
+    margin-inline: 0;
+}
+
+.section-grid,
+.footer-wrap,
+.cta-band-content {
+    display: grid;
+    gap: 2rem;
+}
+
+.section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+}
+
+.contact-card {
+    background: var(--color-white);
+    border: 1px solid rgba(20, 52, 71, 0.08);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    padding: 1.7rem;
+}
+
+.placeholder-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    background:
+        linear-gradient(135deg, rgba(77, 187, 233, 0.16), rgba(25, 193, 141, 0.10)),
+        linear-gradient(180deg, #f6fbff 0%, #eef7fd 100%);
+    color: var(--color-primary-deep);
+    border: 1px dashed rgba(28, 111, 151, 0.18);
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer {
+    background: #f9fcfe;
+    border-top: 1px solid rgba(20, 52, 71, 0.08);
+    padding: 1.7rem 0 2rem;
+}
+
+.footer-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+}
+
+.footer-title {
+    margin: 0 0 0.2rem;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.footer-text {
+    margin: 0.1rem 0;
+    color: var(--color-text-soft);
+}
+
+.footer-side {
+    text-align: right;
+}
+
+.admin-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--color-text-soft);
+    font-size: 0.9rem;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.admin-link:hover {
+    color: var(--color-primary-deep);
+    border-color: rgba(28, 111, 151, 0.35);
+}
+
+@media (max-width: 920px) {
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .menu {
+        position: absolute;
+        top: calc(100% + 0.7rem);
+        right: 0;
+        width: min(320px, calc(100vw - 2rem));
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.9rem;
+        padding: 1rem;
+        background: var(--color-white);
+        border: 1px solid rgba(20, 52, 71, 0.08);
+        border-radius: 20px;
+        box-shadow: var(--shadow-soft);
+    }
+
+    .menu.is-open {
+        display: flex;
+    }
+
+    .menu a,
+    .menu .btn-nav {
+        width: 100%;
+    }
+
+    .menu .btn-nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 820px) {
+    .section,
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .section-grid,
+    .footer-wrap,
+    .cta-band-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-side {
+        text-align: left;
+    }
+}
+
+@media (max-width: 640px) {
+    .brand-name {
+        font-size: 0.95rem;
+    }
+
+    .brand-sub {
+        font-size: 0.66rem;
+        letter-spacing: 0.16rem;
+    }
+}
