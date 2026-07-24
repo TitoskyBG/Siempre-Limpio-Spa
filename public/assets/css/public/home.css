@@ -160,6 +160,20 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+
+.before-after .ba-tabs::-webkit-scrollbar {
+    height: 6px;
+}
+
+
+.before-after .ba-tabs::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 999px;
 }
 
 .ba-tab {
@@ -171,6 +185,8 @@
     font-weight: 700;
     cursor: pointer;
     transition: 0.2s ease;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .ba-tab:hover {
@@ -377,6 +393,7 @@
 
     .ba-tabs {
         justify-content: flex-start;
+        flex-wrap: nowrap;
     }
 }
 
