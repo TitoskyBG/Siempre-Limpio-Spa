@@ -57,8 +57,8 @@
             <a href="#servicios" class="nav-link">Servicios</a>
             <a href="#destacados" class="nav-link">Destacados</a>
             <a href="#antes-despues" class="nav-link">Antes y después</a>
-            <a href="#contacto" class="nav-link">Contacto</a>
             <a href="#cotizar" class="nav-link nav-link-quote">Cotizar</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
         </nav>
     </div>
 </header>
@@ -148,23 +148,36 @@
                 <span class="tag">Nuestros servicios</span>
                 <h2>Servicios principales que ofrecemos</h2>
                 <p>
-                    En escritorio esta sección muestra una imagen central y los servicios alrededor.
-                    En pantallas pequeñas se ordena automáticamente en formato vertical.
+                    En escritorio esta sección muestra una imagen central con los servicios
+                    distribuidos a los costados. En pantallas pequeñas se ordena
+                    automáticamente en formato vertical.
                 </p>
             </div>
 
-            <div class="orbit-layout">
-                <div class="orbit-item top-left">Aseo de oficinas</div>
-                <div class="orbit-item top-right">Limpieza de condominios</div>
-                <div class="orbit-item middle-left">Mantenciones puntuales</div>
+           <div class="orbit-layout">
+                <a href="#cotizar" class="orbit-item js-cotizar-btn top-left" data-service="Aseo de hogar">
+                    Aseo de Hogar
+                </a>
+                <a href="#cotizar" class="orbit-item js-cotizar-btn top-right" data-service="Aseo en condominios">
+                    Aseo en Condominios
+                </a>
+                <a href="#cotizar" class="orbit-item js-cotizar-btn middle-left" data-service="Aseo en oficinas">
+                    Aseo en Oficinas
+                </a>
 
                 <div class="orbit-center">
-                    <div class="orbit-image placeholder-box large">Imagen central de servicios</div>
+                    <div class="orbit-image placeholder-box large">Imagen Central de Servicios</div>
                 </div>
 
-                <div class="orbit-item middle-right">Lavado de tapicería</div>
-                <div class="orbit-item bottom-left">Lavado de autos</div>
-                <div class="orbit-item bottom-right">Otros trabajos de limpieza</div>
+                <a href="#cotizar" class="orbit-item js-cotizar-btn middle-right" data-service="Lavado de tapicería">
+                    Lavado de Tapicería
+                </a>
+                <a href="#cotizar" class="orbit-item js-cotizar-btn bottom-left" data-service="Aseo en gimnasios">
+                    Aseo en Gimnasios
+                </a>
+                <a href="#cotizar" class="orbit-item js-cotizar-btn bottom-right" data-service="Aseo en recintos educacionales">
+                    Aseo en Recintos Educacionales
+                </a>
             </div>
         </div>
     </section>
@@ -447,7 +460,7 @@
 
                     <div class="ba-info">
                         <span class="tag">Limpieza de colchones</span>
-                        <h3>Colchones más limpios e higiénicos</h3>
+                        <h3>Duerme limpio, duerme mejor</h3>
                         <p>
                             Eliminamos ácaros, manchas y malos olores para un descanso
                             más saludable.
@@ -625,28 +638,6 @@
         </div>
     </section>
 
-    {{-- ===================== CONTACTO ===================== --}}
-    <section class="section contact section-tone-white contact-tall" id="contacto">
-        <div class="container section-grid">
-            <div>
-                <span class="tag">Contacto</span>
-                <h2>Estamos listos para ayudarte</h2>
-                <p>
-                    Aquí luego podrás agregar teléfono, correo, zonas de cobertura, horario
-                    y un formulario real de contacto.
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <h3>Datos de contacto</h3>
-                <p>Teléfono: pendiente</p>
-                <p>Correo: pendiente</p>
-                <p>WhatsApp: pendiente</p>
-                <p>Horario: pendiente</p>
-            </div>
-        </div>
-    </section>
-
     {{-- ===================== COTIZAR ===================== --}}
     <section class="section quote-section" id="cotizar">
         <div class="container quote-grid">
@@ -736,6 +727,28 @@
                 </form>
             </div>
 
+        </div>
+    </section>
+
+    {{-- ===================== CONTACTO ===================== --}}
+    <section class="section contact section-tone-white contact-tall" id="contacto">
+        <div class="container section-grid">
+            <div>
+                <span class="tag">Contacto</span>
+                <h2>Estamos listos para ayudarte</h2>
+                <p>
+                    Aquí luego podrás agregar teléfono, correo, zonas de cobertura, horario
+                    y un formulario real de contacto.
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Datos de contacto</h3>
+                <p>Teléfono: pendiente</p>
+                <p>Correo: pendiente</p>
+                <p>WhatsApp: pendiente</p>
+                <p>Horario: pendiente</p>
+            </div>
         </div>
     </section>
 
