@@ -236,7 +236,7 @@
                 </div>
 
                 <div class="feature-content">
-                    <span class="tag">Tapiz de autos</span>
+                    <span class="tag">Limpieza de Tapiz de Autos</span>
                     <h3>Interior del vehículo limpio y sin manchas</h3>
                     <p>
                         Tratamiento especializado para asientos, techo y superficies
@@ -266,7 +266,7 @@
                 </div>
 
                 <div class="feature-content">
-                    <span class="tag">Sillones y sofás</span>
+                    <span class="tag">Limpieza de Sillones y Sofás</span>
                     <h3>Sillones y sofás como nuevos</h3>
                     <p>
                         Ideal para living, oficinas y salas de espera con manchas o
@@ -296,7 +296,7 @@
                 </div>
 
                 <div class="feature-content">
-                    <span class="tag">Sillas de comedor tapizadas</span>
+                    <span class="tag">Limpieza de Sillas de Comedor Tapizadas</span>
                     <h3>Sillas tapizadas higienizadas y sin manchas</h3>
                     <p>
                         Tratamiento cuidadoso para telas de sillas de comedor, muy
@@ -326,7 +326,7 @@
                 </div>
 
                 <div class="feature-content">
-                    <span class="tag">Colchones</span>
+                    <span class="tag">Limpieza de Colchones</span>
                     <h3>Colchones más limpios para un mejor descanso</h3>
                     <p>
                         Eliminamos ácaros, manchas y malos olores devolviendo frescura
@@ -339,6 +339,36 @@
                         <li>Extracción de humedad y secado controlado.</li>
                     </ul>
                     <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de colchones">
+                        Cotizar
+                    </a>
+                </div>
+            </article>
+
+            {{-- Servicio destacado: Limpieza de Pisos Flotantes y Ceramicas --}}
+            <article class="feature-block reverse">
+                <div class="feature-gallery">
+                    <div class="gallery-main placeholder-box">Foto principal sillas de comedor</div>
+                    <div class="gallery-thumbs">
+                        <div class="thumb placeholder-box">Foto 1</div>
+                        <div class="thumb placeholder-box">Foto 2</div>
+                        <div class="thumb placeholder-box">Foto 3</div>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <span class="tag">Limpieza de Pisos Flotantes y Cerámicas</span>
+                    <h3>Sillas tapizadas higienizadas y sin manchas</h3>
+                    <p>
+                        Tratamiento cuidadoso para telas de sillas de comedor, muy
+                        expuestas a manchas de comida y uso frecuente.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Revisión del estado de la tela.</li>
+                        <li>Aspirado y limpieza base.</li>
+                        <li>Aplicación de producto específico según mancha.</li>
+                        <li>Secado y control final.</li>
+                    </ul>
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de Pisos Flotantes y Cerámicas">
                         Cotizar
                     </a>
                 </div>
