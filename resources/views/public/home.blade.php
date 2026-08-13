@@ -154,7 +154,7 @@
                 </p>
             </div>
 
-           <div class="orbit-layout">
+            <div class="orbit-layout">
                 <a href="#cotizar" class="orbit-item js-cotizar-btn top-left" data-service="Aseo de hogar">
                     Aseo de Hogar
                 </a>
@@ -194,10 +194,10 @@
                 </p>
             </div>
 
-            {{-- Servicio destacado: Lavado de autos --}}
+            {{-- Servicio destacado: Lavado de alfombras --}}
             <article class="feature-block">
                 <div class="feature-gallery">
-                    <div class="gallery-main placeholder-box">Foto principal lavado de autos</div>
+                    <div class="gallery-main placeholder-box">Foto principal lavado de alfombras</div>
                     <div class="gallery-thumbs">
                         <div class="thumb placeholder-box">Foto 1</div>
                         <div class="thumb placeholder-box">Foto 2</div>
@@ -206,28 +206,28 @@
                 </div>
 
                 <div class="feature-content">
-                    <span class="tag">Lavado de autos</span>
-                    <h3>Limpieza interior y exterior con atención al detalle</h3>
+                    <span class="tag">Lavado de alfombras</span>
+                    <h3>Alfombras libres de suciedad, ácaros y malos olores</h3>
                     <p>
-                        Aquí podrás incorporar fotografías reales del trabajo realizado y una
-                        explicación simple del procedimiento de atención.
+                        Recuperamos el aspecto y la higiene de tus alfombras con un
+                        proceso especializado que respeta el tipo de fibra.
                     </p>
                     <ul class="feature-list">
-                        <li>Evaluación inicial del estado del vehículo.</li>
-                        <li>Limpieza interior y exterior según requerimiento.</li>
-                        <li>Uso de productos adecuados para cada superficie.</li>
-                        <li>Entrega final y revisión visual del resultado.</li>
+                        <li>Aspirado profundo previo al tratamiento.</li>
+                        <li>Evaluación del tipo de fibra y nivel de suciedad.</li>
+                        <li>Aplicación de shampoo especializado.</li>
+                        <li>Extracción de humedad y secado controlado.</li>
                     </ul>
-                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Lavado de autos">
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Lavado de alfombras">
                         Cotizar
                     </a>
                 </div>
             </article>
 
-            {{-- Servicio destacado: Tapicería --}}
+            {{-- Servicio destacado: Limpieza de tapiz de autos --}}
             <article class="feature-block reverse">
                 <div class="feature-gallery">
-                    <div class="gallery-main placeholder-box">Foto principal tapicería</div>
+                    <div class="gallery-main placeholder-box">Foto principal tapiz de autos</div>
                     <div class="gallery-thumbs">
                         <div class="thumb placeholder-box">Foto 1</div>
                         <div class="thumb placeholder-box">Foto 2</div>
@@ -236,28 +236,28 @@
                 </div>
 
                 <div class="feature-content">
-                    <span class="tag">Tapicería</span>
-                    <h3>Limpieza y tratamiento de telas, asientos y superficies delicadas</h3>
+                    <span class="tag">Tapiz de autos</span>
+                    <h3>Interior del vehículo limpio y sin manchas</h3>
                     <p>
-                        Esta sección es ideal para mostrar antes y después, materiales tratados
-                        y cuidados del procedimiento.
+                        Tratamiento especializado para asientos, techo y superficies
+                        textiles del interior de tu auto.
                     </p>
                     <ul class="feature-list">
-                        <li>Revisión del estado del material.</li>
-                        <li>Aspirado o limpieza base.</li>
-                        <li>Aplicación de producto o tratamiento específico.</li>
-                        <li>Secado y control final.</li>
+                        <li>Revisión del estado del tapiz.</li>
+                        <li>Aspirado profundo de asientos y piso.</li>
+                        <li>Aplicación de shampoo especializado.</li>
+                        <li>Extracción de humedad y secado final.</li>
                     </ul>
-                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Lavado de tapicería">
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de tapiz de autos">
                         Cotizar
                     </a>
                 </div>
             </article>
 
-            {{-- Servicio destacado: Otras mantenciones --}}
+            {{-- Servicio destacado: Sillones y sofás --}}
             <article class="feature-block">
                 <div class="feature-gallery">
-                    <div class="gallery-main placeholder-box">Foto principal otras mantenciones</div>
+                    <div class="gallery-main placeholder-box">Foto principal sillones y sofás</div>
                     <div class="gallery-thumbs">
                         <div class="thumb placeholder-box">Foto 1</div>
                         <div class="thumb placeholder-box">Foto 2</div>
@@ -266,19 +266,79 @@
                 </div>
 
                 <div class="feature-content">
-                    <span class="tag">Otras mantenciones</span>
-                    <h3>Apoyo en trabajos de limpieza y mantención específica</h3>
+                    <span class="tag">Sillones y sofás</span>
+                    <h3>Sillones y sofás como nuevos</h3>
                     <p>
-                        Aquí puedes explicar otros servicios adicionales que ofrezca la empresa
-                        y acompañarlos con imágenes reales del trabajo.
+                        Ideal para living, oficinas y salas de espera con manchas o
+                        suciedad acumulada por el uso diario.
                     </p>
                     <ul class="feature-list">
-                        <li>Recepción de requerimiento del cliente.</li>
-                        <li>Evaluación del trabajo a realizar.</li>
-                        <li>Ejecución con equipos e insumos adecuados.</li>
-                        <li>Revisión final del servicio realizado.</li>
+                        <li>Aspirado profundo de la superficie.</li>
+                        <li>Evaluación del tipo de tela.</li>
+                        <li>Aplicación de shampoo especializado.</li>
+                        <li>Secado y revisión final.</li>
                     </ul>
-                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Otras mantenciones">
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillones y sofás">
+                        Cotizar
+                    </a>
+                </div>
+            </article>
+
+            {{-- Servicio destacado: Sillas de comedor tapizadas --}}
+            <article class="feature-block reverse">
+                <div class="feature-gallery">
+                    <div class="gallery-main placeholder-box">Foto principal sillas de comedor</div>
+                    <div class="gallery-thumbs">
+                        <div class="thumb placeholder-box">Foto 1</div>
+                        <div class="thumb placeholder-box">Foto 2</div>
+                        <div class="thumb placeholder-box">Foto 3</div>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <span class="tag">Sillas de comedor tapizadas</span>
+                    <h3>Sillas tapizadas higienizadas y sin manchas</h3>
+                    <p>
+                        Tratamiento cuidadoso para telas de sillas de comedor, muy
+                        expuestas a manchas de comida y uso frecuente.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Revisión del estado de la tela.</li>
+                        <li>Aspirado y limpieza base.</li>
+                        <li>Aplicación de producto específico según mancha.</li>
+                        <li>Secado y control final.</li>
+                    </ul>
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillas de comedor tapizadas">
+                        Cotizar
+                    </a>
+                </div>
+            </article>
+
+            {{-- Servicio destacado: Colchones --}}
+            <article class="feature-block">
+                <div class="feature-gallery">
+                    <div class="gallery-main placeholder-box">Foto principal colchones</div>
+                    <div class="gallery-thumbs">
+                        <div class="thumb placeholder-box">Foto 1</div>
+                        <div class="thumb placeholder-box">Foto 2</div>
+                        <div class="thumb placeholder-box">Foto 3</div>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <span class="tag">Colchones</span>
+                    <h3>Colchones más limpios para un mejor descanso</h3>
+                    <p>
+                        Eliminamos ácaros, manchas y malos olores devolviendo frescura
+                        e higiene a tu colchón.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Aspirado profundo de la superficie.</li>
+                        <li>Evaluación del tipo de tela.</li>
+                        <li>Aplicación de shampoo especializado.</li>
+                        <li>Extracción de humedad y secado controlado.</li>
+                    </ul>
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de colchones">
                         Cotizar
                     </a>
                 </div>
@@ -653,6 +713,7 @@
                 </p>
 
                 <ul class="quote-benefits">
+                    <li>Visita técnica gratuita antes de confirmar el trabajo.</li>
                     <li>Respuesta a la brevedad por correo o teléfono.</li>
                     <li>Cotización según el tamaño real de tu espacio o vehículo.</li>
                     <li>Sin compromiso hasta confirmar el servicio.</li>
@@ -737,17 +798,18 @@
                 <span class="tag">Contacto</span>
                 <h2>Estamos listos para ayudarte</h2>
                 <p>
-                    Aquí luego podrás agregar teléfono, correo, zonas de cobertura, horario
-                    y un formulario real de contacto.
+                    Atendemos en Talca, Maule, Curicó, San Rafael, Linares y San Clemente.
+                    Escríbenos por Instagram o completa el formulario de cotización.
                 </p>
             </div>
 
             <div class="contact-card">
                 <h3>Datos de contacto</h3>
-                <p>Teléfono: pendiente</p>
-                <p>Correo: pendiente</p>
-                <p>WhatsApp: pendiente</p>
-                <p>Horario: pendiente</p>
+                <p>Teléfono / WhatsApp: +56 9 7712 2022</p>
+                <p>Instagram: @siemprelimpiospa</p>
+                <p>Horario: Lunes a viernes 09:00 - 21:00 hrs</p>
+                <p>Sábado: 09:00 - 17:00 hrs</p>
+                <p>Domingo: Cerrado</p>
             </div>
         </div>
     </section>
@@ -776,6 +838,3 @@
 
 </body>
 </html>
-
-
-
