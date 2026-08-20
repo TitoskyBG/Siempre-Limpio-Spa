@@ -115,27 +115,59 @@
 
             <div class="equipment-grid">
                 <article class="equipment-card">
-                    <div class="equipment-image placeholder-box">Imagen equipo</div>
-                    <h3>Aspiradoras industriales</h3>
+                    <div class="equipment-image">
+                        <img
+                            src="{{ asset('assets/img/herramientas/abrillantadora.png') }}"
+                            alt="Abrillantadora industrial"
+                            width="600"
+                            height="600"
+                            loading="lazy"
+                        >
+                    </div>
+                    <h3>Abrillantadora</h3>
                     <p>Para limpieza profunda de alfombras, tapices, interiores y superficies de alto uso.</p>
                 </article>
 
                 <article class="equipment-card">
-                    <div class="equipment-image placeholder-box">Imagen equipo</div>
-                    <h3>Máquinas de vapor</h3>
-                    <p>Ideales para sanitización, limpieza especializada y tratamiento de suciedad adherida.</p>
+                    <div class="equipment-image">
+                        <img
+                            src="{{ asset('assets/img/herramientas/carros-estrujador.png') }}"
+                            alt="Carro estrujador profesional"
+                            width="600"
+                            height="600"
+                            loading="lazy"
+                        >
+                    </div>
+                    <h3>Carros estrujadores</h3>
+                    <p>Escurrir mopas y paños de forma rápida y limpiar pisos grandes y zonas pequeñas.</p>
                 </article>
 
                 <article class="equipment-card">
-                    <div class="equipment-image placeholder-box">Imagen equipo</div>
+                    <div class="equipment-image">
+                        <img
+                            src="{{ asset('assets/img/herramientas/hidrolavadora.png') }}"
+                            alt="Hidrolavadora profesional"
+                            width="600"
+                            height="600"
+                            loading="lazy"
+                        >
+                    </div>
                     <h3>Hidrolavadoras</h3>
                     <p>Muy útiles en exteriores, accesos, pisos y áreas con suciedad acumulada.</p>
                 </article>
 
                 <article class="equipment-card">
-                    <div class="equipment-image placeholder-box">Imagen equipo</div>
-                    <h3>Productos e insumos</h3>
-                    <p>Aplicados según tipo de superficie, necesidad del cliente y cuidado del material.</p>
+                    <div class="equipment-image">
+                        <img
+                            src="{{ asset('assets/img/herramientas/aspiradoras.png') }}"
+                            alt="Aspiradora profesional"
+                            width="600"
+                            height="600"
+                            loading="lazy"
+                        >
+                    </div>
+                    <h3>Aspiradora Profesional</h3>
+                    <p>Útil para quitar manchas profundas de alfombras de distinto tamaño y grosor, entregando resultados de calidad.</p>
                 </article>
             </div>
         </div>
