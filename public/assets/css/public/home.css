@@ -184,16 +184,37 @@
 }
 
 
+/* ===========================================================
+   GALERÍA DE SERVICIOS DESTACADOS
+   Una imagen principal grande y tres imágenes pequeñas.
+   object-fit: cover evita deformaciones y recorta la foto
+   para llenar cada espacio de manera proporcional.
+=========================================================== */
+
 .feature-gallery {
     display: grid;
     gap: 1rem;
 }
 
 
+/* Foto principal de cada servicio destacado */
 .gallery-main {
-    min-height: 320px;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--color-surface);
 }
 
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--radius-lg);
+}
 
 .gallery-thumbs {
     display: grid;
@@ -201,11 +222,31 @@
     gap: 1rem;
 }
 
-
-.thumb {
-    min-height: 100px;
+/* Contenedor de las tres miniaturas */
+.gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
+/* Cada miniatura mantiene forma cuadrada */
+.thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--color-surface);
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
 
 .feature-content {
     background: var(--color-white);

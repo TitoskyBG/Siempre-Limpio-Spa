@@ -237,11 +237,23 @@
             {{-- Servicio destacado: Lavado de alfombras --}}
             <article class="feature-block">
                 <div class="feature-gallery">
-                    <div class="gallery-main placeholder-box">Foto principal lavado de alfombras</div>
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/foto-principal/alfombras.webp') }}"
+                            alt="Lavado profundo de alfombras"
+                            loading="lazy"
+                        >
+                    </div>
                     <div class="gallery-thumbs">
-                        <div class="thumb placeholder-box">Foto 1</div>
-                        <div class="thumb placeholder-box">Foto 2</div>
-                        <div class="thumb placeholder-box">Foto 3</div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/alfombras-1.webp') }}" alt="Aspirado previo de alfombra" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/alfombras-2.webp') }}" alt="Aplicación de shampoo en alfombra" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/alfombras-3.webp') }}" alt="Resultado final de alfombra limpia" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
@@ -267,11 +279,23 @@
             {{-- Servicio destacado: Limpieza de tapiz de autos --}}
             <article class="feature-block reverse">
                 <div class="feature-gallery">
-                    <div class="gallery-main placeholder-box">Foto principal tapiz de autos</div>
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/foto-principal/tapiz-autos.webp') }}"
+                            alt="Limpieza de tapiz de autos"
+                            loading="lazy"
+                        >
+                    </div>
                     <div class="gallery-thumbs">
-                        <div class="thumb placeholder-box">Foto 1</div>
-                        <div class="thumb placeholder-box">Foto 2</div>
-                        <div class="thumb placeholder-box">Foto 3</div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/tapiz-autos-1.webp') }}" alt="Revisión de tapiz de auto" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/tapiz-autos-2.webp') }}" alt="Aspirado de asientos de auto" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/tapiz-autos-3.webp') }}" alt="Asiento de auto limpio" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
@@ -297,11 +321,23 @@
             {{-- Servicio destacado: Sillones y sofás --}}
             <article class="feature-block">
                 <div class="feature-gallery">
-                    <div class="gallery-main placeholder-box">Foto principal sillones y sofás</div>
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/foto-principal/sillones-sofas.webp') }}"
+                            alt="Limpieza de sillones y sofás"
+                            loading="lazy"
+                        >
+                    </div>
                     <div class="gallery-thumbs">
-                        <div class="thumb placeholder-box">Foto 1</div>
-                        <div class="thumb placeholder-box">Foto 2</div>
-                        <div class="thumb placeholder-box">Foto 3</div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/sillones-sofas-1.webp') }}" alt="Aspirado de sofá" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/sillones-sofas-2.webp') }}" alt="Aplicación de shampoo en sofá" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/sillones-sofas-3.webp') }}" alt="Sofá limpio final" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
@@ -327,11 +363,23 @@
             {{-- Servicio destacado: Sillas de comedor tapizadas --}}
             <article class="feature-block reverse">
                 <div class="feature-gallery">
-                    <div class="gallery-main placeholder-box">Foto principal sillas de comedor</div>
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/foto-principal/sillas-comedor.webp') }}"
+                            alt="Limpieza de sillas de comedor tapizadas"
+                            loading="lazy"
+                        >
+                    </div>
                     <div class="gallery-thumbs">
-                        <div class="thumb placeholder-box">Foto 1</div>
-                        <div class="thumb placeholder-box">Foto 2</div>
-                        <div class="thumb placeholder-box">Foto 3</div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/sillas-comedor-1.webp') }}" alt="Revisión de tela de silla" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/sillas-comedor-2.webp') }}" alt="Aplicación de producto en silla" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/sillas-comedor-3.webp') }}" alt="Silla de comedor limpia" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
@@ -357,11 +405,23 @@
             {{-- Servicio destacado: Colchones --}}
             <article class="feature-block">
                 <div class="feature-gallery">
-                    <div class="gallery-main placeholder-box">Foto principal colchones</div>
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/foto-principal/colchones.webp') }}"
+                            alt="Limpieza de colchones"
+                            loading="lazy"
+                        >
+                    </div>
                     <div class="gallery-thumbs">
-                        <div class="thumb placeholder-box">Foto 1</div>
-                        <div class="thumb placeholder-box">Foto 2</div>
-                        <div class="thumb placeholder-box">Foto 3</div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/colchones-1.webp') }}" alt="Aspirado de colchón" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/colchones-2.webp') }}" alt="Aplicación de shampoo en colchón" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/colchones-3.webp') }}" alt="Colchón limpio final" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
@@ -384,28 +444,40 @@
                 </div>
             </article>
 
-            {{-- Servicio destacado: Limpieza de Pisos Flotantes y Ceramicas --}}
+            {{-- Servicio destacado: Limpieza de Pisos Flotantes y Cerámicas --}}
             <article class="feature-block reverse">
                 <div class="feature-gallery">
-                    <div class="gallery-main placeholder-box">Foto principal sillas de comedor</div>
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/foto-principal/pisos.webp') }}"
+                            alt="Limpieza de pisos flotantes y cerámicas"
+                            loading="lazy"
+                        >
+                    </div>
                     <div class="gallery-thumbs">
-                        <div class="thumb placeholder-box">Foto 1</div>
-                        <div class="thumb placeholder-box">Foto 2</div>
-                        <div class="thumb placeholder-box">Foto 3</div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/pisos-1.webp') }}" alt="Piso con suciedad antes del lavado" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/pisos-2.webp') }}" alt="Fregado de piso en proceso" loading="lazy">
+                        </div>
+                        <div class="thumb">
+                            <img src="{{ asset('assets/img/servicios-destacados/miniatura/pisos-3.webp') }}" alt="Piso limpio con brillo final" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
                 <div class="feature-content">
                     <span class="tag">Limpieza de Pisos Flotantes y Cerámicas</span>
-                    <h3>Sillas tapizadas higienizadas y sin manchas</h3>
+                    <h3>Pisos limpios, brillantes y libres de suciedad acumulada</h3>
                     <p>
-                        Tratamiento cuidadoso para telas de sillas de comedor, muy
-                        expuestas a manchas de comida y uso frecuente.
+                        Tratamiento adecuado según el tipo de superficie, ideal para
+                        pisos flotantes y cerámicas con uso frecuente.
                     </p>
                     <ul class="feature-list">
-                        <li>Revisión del estado de la tela.</li>
-                        <li>Aspirado y limpieza base.</li>
-                        <li>Aplicación de producto específico según mancha.</li>
+                        <li>Barrido y retiro de suciedad suelta.</li>
+                        <li>Fregado mecánico o manual según superficie.</li>
+                        <li>Aplicación de producto específico según el material.</li>
                         <li>Secado y control final.</li>
                     </ul>
                     <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de Pisos Flotantes y Cerámicas">
@@ -415,6 +487,7 @@
             </article>
         </div>
     </section>
+
 
     {{-- ===================== ANTES Y DESPUÉS ===================== --}}
     <section class="section before-after section-tone-blue" id="antes-despues">
