@@ -70,7 +70,9 @@
         <div class="container hero-grid">
             <div class="hero-content">
                 <span class="tag">Servicios de limpieza y mantención</span>
+
                 <h1>Soluciones limpias, ordenadas y confiables para tu espacio.</h1>
+
                 <p>
                     Siempre Limpio SPA entrega servicios de aseo, mantención y limpieza
                     especializada para oficinas, espacios pequeños, vehículos, tapicerías
@@ -78,7 +80,11 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="">
+                    <a
+                        href="#cotizar"
+                        class="btn btn-primary js-cotizar-btn"
+                        data-service=""
+                    >
                         Solicitar cotización
                     </a>
 
@@ -90,16 +96,26 @@
 
             <div class="hero-visual">
                 <div class="hero-card">
-                    <span class="hero-card-label">Espacio para imagen principal</span>
-                    <div class="placeholder-box hero-placeholder">Imagen o trabajo destacado</div>
-                    <p>
-                        Aquí luego puedes agregar una foto real del equipo, de una limpieza
-                        en proceso o un antes y después.
+                    <span class="hero-card-label">Siempre Limpio SPA</span>
+
+                    <div class="hero-image">
+                        <img
+                            src="{{ asset('assets/img/inicio/princio-referencia.jpg') }}"
+                            alt="Equipo de Siempre Limpio SPA realizando un servicio de limpieza"
+                            width="900"
+                            height="675"
+                            loading="eager"
+                        >
+                    </div>
+
+                    <p class="hero-image-caption">
+                        Trabajamos con dedicación para entregar espacios limpios, frescos
+                        y listos para disfrutar.
                     </p>
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
     {{-- ===================== EQUIPOS ===================== --}}
     <section class="section equipments section-tone-white" id="equipos">
