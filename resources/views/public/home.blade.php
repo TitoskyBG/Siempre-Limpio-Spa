@@ -394,7 +394,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de sillones y sofás">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-03.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa.webp') }}"
                                 alt="Proceso de limpieza de sofá"
                                 width="300"
                                 height="300"
@@ -404,7 +404,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de sillones y sofás">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-04.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-1.webp') }}"
                                 alt="Sofá limpio después del servicio"
                                 width="300"
                                 height="300"
