@@ -159,6 +159,12 @@
     border-radius: 16px;
 }
 
+/* ===========================================================
+   GALERÍA DE SERVICIOS DESTACADOS
+   Una imagen principal grande y tres imágenes pequeñas.
+   object-fit: cover evita deformaciones y recorta la foto
+   para llenar cada espacio de manera proporcional.
+=========================================================== */
 
 .featured-services .container {
     display: grid;
@@ -182,14 +188,6 @@
 .feature-block.reverse .feature-content {
     order: 1;
 }
-
-
-/* ===========================================================
-   GALERÍA DE SERVICIOS DESTACADOS
-   Una imagen principal grande y tres imágenes pequeñas.
-   object-fit: cover evita deformaciones y recorta la foto
-   para llenar cada espacio de manera proporcional.
-=========================================================== */
 
 .feature-gallery {
     display: grid;
