@@ -198,7 +198,15 @@
                 </a>
 
                 <div class="orbit-center">
-                    <div class="orbit-image placeholder-box large">Imagen Central de Servicios</div>
+                    <div class="orbit-image large">
+                        <img
+                            src="{{ asset('assets/img/orbita/Imagen-Referencia.jpg') }}"
+                            alt="Equipo de Siempre Limpio SPA realizando un servicio de limpieza"
+                            width="650"
+                            height="450"
+                            loading="lazy"
+                        >
+                    </div>
                 </div>
 
                 <a href="#cotizar" class="orbit-item js-cotizar-btn middle-right" data-service="Lavado de tapicería">
