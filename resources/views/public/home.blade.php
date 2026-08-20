@@ -574,7 +574,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/pisos/piso-01.webp') }}"
+                            src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe-despues.jpg') }}"
                             alt="Limpieza profesional de pisos flotantes y cerámicas"
                             width="900"
                             height="675"
@@ -585,7 +585,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de limpieza de pisos flotantes y cerámicas">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de pisos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-02.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe-antes.jpg') }}"
                                 alt="Limpieza de piso cerámico"
                                 width="300"
                                 height="300"
@@ -595,7 +595,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de pisos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-03.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe2-despues.jpg') }}"
                                 alt="Lavado de piso flotante"
                                 width="300"
                                 height="300"
@@ -605,7 +605,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de pisos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-04.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe2-antes.jpg') }}"
                                 alt="Piso limpio después del servicio"
                                 width="300"
                                 height="300"
