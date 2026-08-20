@@ -203,7 +203,7 @@
                             src="{{ asset('assets/img/orbita/Imagen-Referencia.jpg') }}"
                             alt="Equipo de Siempre Limpio SPA realizando un servicio de limpieza"
                             width="650"
-                            height="450"
+                            height="650"
                             loading="lazy"
                         >
                     </div>
