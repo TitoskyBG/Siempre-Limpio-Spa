@@ -223,420 +223,420 @@
     </section>
 
     {{-- ===================== SERVICIOS DESTACADOS ===================== --}}
-<section class="section featured-services section-tone-white" id="destacados">
-    <div class="container">
-        <div class="section-heading left">
-            <span class="tag">Servicios destacados</span>
-            <h2>Servicios explicados en detalle</h2>
-            <p>
-                Conoce algunos de nuestros servicios especializados y revisa imágenes
-                reales del proceso y resultado de cada trabajo.
-            </p>
+    <section class="section featured-services section-tone-white" id="destacados">
+        <div class="container">
+            <div class="section-heading left">
+                <span class="tag">Servicios destacados</span>
+                <h2>Servicios explicados en detalle</h2>
+                <p>
+                    Conoce algunos de nuestros servicios especializados y revisa imágenes
+                    reales del proceso y resultado de cada trabajo.
+                </p>
+            </div>
+
+            {{-- ==================== LAVADO DE ALFOMBRAS ==================== --}}
+            <article class="feature-block">
+                <div class="feature-gallery">
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-01.webp') }}"
+                            alt="Lavado profesional de alfombra"
+                            width="900"
+                            height="675"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-thumbs" aria-label="Galería de lavado de alfombras">
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de lavado de alfombras">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-02.webp') }}"
+                                alt="Proceso de limpieza de alfombra"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de lavado de alfombras">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-03.webp') }}"
+                                alt="Aplicación de producto para lavar alfombra"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de lavado de alfombras">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-04.webp') }}"
+                                alt="Alfombra limpia después del servicio"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <span class="tag">Lavado de alfombras</span>
+                    <h3>Alfombras libres de suciedad, ácaros y malos olores</h3>
+                    <p>
+                        Recuperamos el aspecto y la higiene de tus alfombras con un proceso
+                        especializado que respeta el tipo de fibra y el nivel de suciedad.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Aspirado profundo previo al tratamiento.</li>
+                        <li>Evaluación del tipo de fibra y nivel de suciedad.</li>
+                        <li>Aplicación de shampoo especializado.</li>
+                        <li>Extracción de humedad y secado controlado.</li>
+                    </ul>
+
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Lavado de alfombras">
+                        Cotizar
+                    </a>
+                </div>
+            </article>
+
+            {{-- ==================== TAPIZ DE AUTOS ==================== --}}
+            <article class="feature-block reverse">
+                <div class="feature-gallery">
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-01.webp') }}"
+                            alt="Limpieza profesional de tapiz de auto"
+                            width="900"
+                            height="675"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-thumbs" aria-label="Galería de limpieza de tapiz de autos">
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de tapiz de autos">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-02.webp') }}"
+                                alt="Limpieza de asientos de auto"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de tapiz de autos">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-03.webp') }}"
+                                alt="Extracción de suciedad en tapiz de vehículo"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de tapiz de autos">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-04.webp') }}"
+                                alt="Interior de auto limpio después del servicio"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <span class="tag">Limpieza de tapiz de autos</span>
+                    <h3>Interior del vehículo limpio y sin manchas</h3>
+                    <p>
+                        Tratamiento especializado para asientos, techo y superficies
+                        textiles del interior de tu auto.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Revisión del estado del tapiz.</li>
+                        <li>Aspirado profundo de asientos y piso.</li>
+                        <li>Aplicación de shampoo especializado.</li>
+                        <li>Extracción de humedad y secado final.</li>
+                    </ul>
+
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de tapiz de autos">
+                        Cotizar
+                    </a>
+                </div>
+            </article>
+
+            {{-- ==================== SILLONES Y SOFÁS ==================== --}}
+            <article class="feature-block">
+                <div class="feature-gallery">
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-01.webp') }}"
+                            alt="Limpieza profesional de sillón"
+                            width="900"
+                            height="675"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-thumbs" aria-label="Galería de limpieza de sillones y sofás">
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de sillones y sofás">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-02.webp') }}"
+                                alt="Aplicación de producto sobre sillón"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de sillones y sofás">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-03.webp') }}"
+                                alt="Proceso de limpieza de sofá"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de sillones y sofás">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-04.webp') }}"
+                                alt="Sofá limpio después del servicio"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <span class="tag">Limpieza de sillones y sofás</span>
+                    <h3>Sillones y sofás como nuevos</h3>
+                    <p>
+                        Ideal para living, oficinas y salas de espera con manchas o suciedad
+                        acumulada por el uso diario.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Aspirado profundo de la superficie.</li>
+                        <li>Evaluación del tipo de tela.</li>
+                        <li>Aplicación de shampoo especializado.</li>
+                        <li>Secado y revisión final.</li>
+                    </ul>
+
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillones y sofás">
+                        Cotizar
+                    </a>
+                </div>
+            </article>
+
+            {{-- ==================== SILLAS DE COMEDOR ==================== --}}
+            <article class="feature-block reverse">
+                <div class="feature-gallery">
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-01.webp') }}"
+                            alt="Limpieza de sillas de comedor tapizadas"
+                            width="900"
+                            height="675"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-thumbs" aria-label="Galería de limpieza de sillas de comedor">
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de sillas de comedor">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-02.webp') }}"
+                                alt="Limpieza de tapiz de silla"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de sillas de comedor">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-03.webp') }}"
+                                alt="Proceso de lavado de silla tapizada"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de sillas de comedor">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-04.webp') }}"
+                                alt="Silla tapizada limpia después del servicio"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <span class="tag">Limpieza de sillas de comedor tapizadas</span>
+                    <h3>Sillas tapizadas higienizadas y sin manchas</h3>
+                    <p>
+                        Tratamiento cuidadoso para telas de sillas de comedor, expuestas a
+                        manchas de comida y al uso frecuente.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Revisión del estado de la tela.</li>
+                        <li>Aspirado y limpieza base.</li>
+                        <li>Aplicación de producto según el tipo de mancha.</li>
+                        <li>Secado y control final.</li>
+                    </ul>
+
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillas de comedor tapizadas">
+                        Cotizar
+                    </a>
+                </div>
+            </article>
+
+            {{-- ==================== COLCHONES ==================== --}}
+            <article class="feature-block">
+                <div class="feature-gallery">
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/colchones/colchon-01.webp') }}"
+                            alt="Lavado profesional de colchón"
+                            width="900"
+                            height="675"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-thumbs" aria-label="Galería de lavado de colchones">
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de lavado de colchones">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/colchones/colchon-02.webp') }}"
+                                alt="Proceso de limpieza de colchón"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de lavado de colchones">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/colchones/colchon-03.webp') }}"
+                                alt="Extracción de suciedad de colchón"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de lavado de colchones">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/colchones/colchon-04.webp') }}"
+                                alt="Colchón limpio después del servicio"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <span class="tag">Limpieza de colchones</span>
+                    <h3>Colchones más limpios para un mejor descanso</h3>
+                    <p>
+                        Eliminamos suciedad, manchas y malos olores, devolviendo frescura e
+                        higiene a tu colchón.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Aspirado profundo de la superficie.</li>
+                        <li>Evaluación del tipo de tela.</li>
+                        <li>Aplicación de shampoo especializado.</li>
+                        <li>Extracción de humedad y secado controlado.</li>
+                    </ul>
+
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de colchones">
+                        Cotizar
+                    </a>
+                </div>
+            </article>
+
+            {{-- ==================== PISOS ==================== --}}
+            <article class="feature-block reverse">
+                <div class="feature-gallery">
+                    <div class="gallery-main">
+                        <img
+                            src="{{ asset('assets/img/servicios-destacados/pisos/piso-01.webp') }}"
+                            alt="Limpieza profesional de pisos flotantes y cerámicas"
+                            width="900"
+                            height="675"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="gallery-thumbs" aria-label="Galería de limpieza de pisos flotantes y cerámicas">
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de pisos">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-02.webp') }}"
+                                alt="Limpieza de piso cerámico"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de pisos">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-03.webp') }}"
+                                alt="Lavado de piso flotante"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de pisos">
+                            <img
+                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-04.webp') }}"
+                                alt="Piso limpio después del servicio"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            >
+                        </button>
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <span class="tag">Limpieza de pisos flotantes y cerámicas</span>
+                    <h3>Pisos limpios, protegidos y con mejor terminación</h3>
+                    <p>
+                        Realizamos limpieza y mantención de pisos flotantes y cerámicos,
+                        cuidando cada superficie según su material y estado.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Retiro de polvo y suciedad acumulada.</li>
+                        <li>Aplicación de productos adecuados para cada superficie.</li>
+                        <li>Fregado manual o mecánico según necesidad.</li>
+                        <li>Secado y revisión final del resultado.</li>
+                    </ul>
+
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de pisos flotantes y cerámicas">
+                        Cotizar
+                    </a>
+                </div>
+            </article>
         </div>
-
-        {{-- ==================== LAVADO DE ALFOMBRAS ==================== --}}
-        <article class="feature-block">
-            <div class="feature-gallery">
-                <div class="gallery-main">
-                    <img
-                        src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-01.webp') }}"
-                        alt="Lavado profesional de alfombra"
-                        width="900"
-                        height="675"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="gallery-thumbs" aria-label="Galería de lavado de alfombras">
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de lavado de alfombras">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-02.webp') }}"
-                            alt="Proceso de limpieza de alfombra"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de lavado de alfombras">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-03.webp') }}"
-                            alt="Aplicación de producto para lavar alfombra"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de lavado de alfombras">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-04.webp') }}"
-                            alt="Alfombra limpia después del servicio"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-                </div>
-            </div>
-
-            <div class="feature-content">
-                <span class="tag">Lavado de alfombras</span>
-                <h3>Alfombras libres de suciedad, ácaros y malos olores</h3>
-                <p>
-                    Recuperamos el aspecto y la higiene de tus alfombras con un proceso
-                    especializado que respeta el tipo de fibra y el nivel de suciedad.
-                </p>
-
-                <ul class="feature-list">
-                    <li>Aspirado profundo previo al tratamiento.</li>
-                    <li>Evaluación del tipo de fibra y nivel de suciedad.</li>
-                    <li>Aplicación de shampoo especializado.</li>
-                    <li>Extracción de humedad y secado controlado.</li>
-                </ul>
-
-                <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Lavado de alfombras">
-                    Cotizar
-                </a>
-            </div>
-        </article>
-
-        {{-- ==================== TAPIZ DE AUTOS ==================== --}}
-        <article class="feature-block reverse">
-            <div class="feature-gallery">
-                <div class="gallery-main">
-                    <img
-                        src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-01.webp') }}"
-                        alt="Limpieza profesional de tapiz de auto"
-                        width="900"
-                        height="675"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="gallery-thumbs" aria-label="Galería de limpieza de tapiz de autos">
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de tapiz de autos">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-02.webp') }}"
-                            alt="Limpieza de asientos de auto"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de tapiz de autos">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-03.webp') }}"
-                            alt="Extracción de suciedad en tapiz de vehículo"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de tapiz de autos">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-04.webp') }}"
-                            alt="Interior de auto limpio después del servicio"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-                </div>
-            </div>
-
-            <div class="feature-content">
-                <span class="tag">Limpieza de tapiz de autos</span>
-                <h3>Interior del vehículo limpio y sin manchas</h3>
-                <p>
-                    Tratamiento especializado para asientos, techo y superficies
-                    textiles del interior de tu auto.
-                </p>
-
-                <ul class="feature-list">
-                    <li>Revisión del estado del tapiz.</li>
-                    <li>Aspirado profundo de asientos y piso.</li>
-                    <li>Aplicación de shampoo especializado.</li>
-                    <li>Extracción de humedad y secado final.</li>
-                </ul>
-
-                <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de tapiz de autos">
-                    Cotizar
-                </a>
-            </div>
-        </article>
-
-        {{-- ==================== SILLONES Y SOFÁS ==================== --}}
-        <article class="feature-block">
-            <div class="feature-gallery">
-                <div class="gallery-main">
-                    <img
-                        src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-01.webp') }}"
-                        alt="Limpieza profesional de sillón"
-                        width="900"
-                        height="675"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="gallery-thumbs" aria-label="Galería de limpieza de sillones y sofás">
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de sillones y sofás">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-02.webp') }}"
-                            alt="Aplicación de producto sobre sillón"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de sillones y sofás">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-03.webp') }}"
-                            alt="Proceso de limpieza de sofá"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de sillones y sofás">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-04.webp') }}"
-                            alt="Sofá limpio después del servicio"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-                </div>
-            </div>
-
-            <div class="feature-content">
-                <span class="tag">Limpieza de sillones y sofás</span>
-                <h3>Sillones y sofás como nuevos</h3>
-                <p>
-                    Ideal para living, oficinas y salas de espera con manchas o suciedad
-                    acumulada por el uso diario.
-                </p>
-
-                <ul class="feature-list">
-                    <li>Aspirado profundo de la superficie.</li>
-                    <li>Evaluación del tipo de tela.</li>
-                    <li>Aplicación de shampoo especializado.</li>
-                    <li>Secado y revisión final.</li>
-                </ul>
-
-                <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillones y sofás">
-                    Cotizar
-                </a>
-            </div>
-        </article>
-
-        {{-- ==================== SILLAS DE COMEDOR ==================== --}}
-        <article class="feature-block reverse">
-            <div class="feature-gallery">
-                <div class="gallery-main">
-                    <img
-                        src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-01.webp') }}"
-                        alt="Limpieza de sillas de comedor tapizadas"
-                        width="900"
-                        height="675"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="gallery-thumbs" aria-label="Galería de limpieza de sillas de comedor">
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de sillas de comedor">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-02.webp') }}"
-                            alt="Limpieza de tapiz de silla"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de sillas de comedor">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-03.webp') }}"
-                            alt="Proceso de lavado de silla tapizada"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de sillas de comedor">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-04.webp') }}"
-                            alt="Silla tapizada limpia después del servicio"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-                </div>
-            </div>
-
-            <div class="feature-content">
-                <span class="tag">Limpieza de sillas de comedor tapizadas</span>
-                <h3>Sillas tapizadas higienizadas y sin manchas</h3>
-                <p>
-                    Tratamiento cuidadoso para telas de sillas de comedor, expuestas a
-                    manchas de comida y al uso frecuente.
-                </p>
-
-                <ul class="feature-list">
-                    <li>Revisión del estado de la tela.</li>
-                    <li>Aspirado y limpieza base.</li>
-                    <li>Aplicación de producto según el tipo de mancha.</li>
-                    <li>Secado y control final.</li>
-                </ul>
-
-                <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillas de comedor tapizadas">
-                    Cotizar
-                </a>
-            </div>
-        </article>
-
-        {{-- ==================== COLCHONES ==================== --}}
-        <article class="feature-block">
-            <div class="feature-gallery">
-                <div class="gallery-main">
-                    <img
-                        src="{{ asset('assets/img/servicios-destacados/colchones/colchon-01.webp') }}"
-                        alt="Lavado profesional de colchón"
-                        width="900"
-                        height="675"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="gallery-thumbs" aria-label="Galería de lavado de colchones">
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de lavado de colchones">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/colchones/colchon-02.webp') }}"
-                            alt="Proceso de limpieza de colchón"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de lavado de colchones">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/colchones/colchon-03.webp') }}"
-                            alt="Extracción de suciedad de colchón"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de lavado de colchones">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/colchones/colchon-04.webp') }}"
-                            alt="Colchón limpio después del servicio"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-                </div>
-            </div>
-
-            <div class="feature-content">
-                <span class="tag">Limpieza de colchones</span>
-                <h3>Colchones más limpios para un mejor descanso</h3>
-                <p>
-                    Eliminamos suciedad, manchas y malos olores, devolviendo frescura e
-                    higiene a tu colchón.
-                </p>
-
-                <ul class="feature-list">
-                    <li>Aspirado profundo de la superficie.</li>
-                    <li>Evaluación del tipo de tela.</li>
-                    <li>Aplicación de shampoo especializado.</li>
-                    <li>Extracción de humedad y secado controlado.</li>
-                </ul>
-
-                <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de colchones">
-                    Cotizar
-                </a>
-            </div>
-        </article>
-
-        {{-- ==================== PISOS ==================== --}}
-        <article class="feature-block reverse">
-            <div class="feature-gallery">
-                <div class="gallery-main">
-                    <img
-                        src="{{ asset('assets/img/servicios-destacados/pisos/piso-01.webp') }}"
-                        alt="Limpieza profesional de pisos flotantes y cerámicas"
-                        width="900"
-                        height="675"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="gallery-thumbs" aria-label="Galería de limpieza de pisos flotantes y cerámicas">
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de pisos">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/pisos/piso-02.webp') }}"
-                            alt="Limpieza de piso cerámico"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de pisos">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/pisos/piso-03.webp') }}"
-                            alt="Lavado de piso flotante"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-
-                    <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de pisos">
-                        <img
-                            src="{{ asset('assets/img/servicios-destacados/pisos/piso-04.webp') }}"
-                            alt="Piso limpio después del servicio"
-                            width="300"
-                            height="300"
-                            loading="lazy"
-                        >
-                    </button>
-                </div>
-            </div>
-
-            <div class="feature-content">
-                <span class="tag">Limpieza de pisos flotantes y cerámicas</span>
-                <h3>Pisos limpios, protegidos y con mejor terminación</h3>
-                <p>
-                    Realizamos limpieza y mantención de pisos flotantes y cerámicos,
-                    cuidando cada superficie según su material y estado.
-                </p>
-
-                <ul class="feature-list">
-                    <li>Retiro de polvo y suciedad acumulada.</li>
-                    <li>Aplicación de productos adecuados para cada superficie.</li>
-                    <li>Fregado manual o mecánico según necesidad.</li>
-                    <li>Secado y revisión final del resultado.</li>
-                </ul>
-
-                <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de pisos flotantes y cerámicas">
-                    Cotizar
-                </a>
-            </div>
-        </article>
-    </div>
-</section>
+    </section>
 
 
     {{-- ===================== ANTES Y DESPUÉS ===================== --}}
@@ -1128,6 +1128,8 @@
 <script src="{{ asset('assets/js/public/nav.js') }}"></script>
 <script src="{{ asset('assets/js/public/before-after.js') }}"></script>
 <script src="{{ asset('assets/js/public/quote-form.js') }}"></script>
+
+<script src="{{ asset('assets/js/public/featured-gallery.js') }}"></script>
 
 </body>
 </html>
