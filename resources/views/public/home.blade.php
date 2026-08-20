@@ -239,7 +239,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-01.webp') }}"
+                            src="{{ asset('assets/img/servicios-destacados/lavado-alfombra/alfombra-1.jpg') }}"
                             alt="Lavado profesional de alfombra"
                             width="900"
                             height="675"
@@ -250,7 +250,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de lavado de alfombras">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de lavado de alfombras">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-02.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombra/alfombra-2.jpg') }}"
                                 alt="Proceso de limpieza de alfombra"
                                 width="300"
                                 height="300"
@@ -260,7 +260,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de lavado de alfombras">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-03.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombra/alfombra-3.jpg') }}"
                                 alt="Aplicación de producto para lavar alfombra"
                                 width="300"
                                 height="300"
@@ -270,7 +270,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de lavado de alfombras">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombras/alfombra-04.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombra/alfombra-4.jpg') }}"
                                 alt="Alfombra limpia después del servicio"
                                 width="300"
                                 height="300"
@@ -306,7 +306,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-01.webp') }}"
+                            src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-4.jpg') }}"
                             alt="Limpieza profesional de tapiz de auto"
                             width="900"
                             height="675"
@@ -317,7 +317,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de limpieza de tapiz de autos">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de tapiz de autos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-02.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-3.jpg') }}"
                                 alt="Limpieza de asientos de auto"
                                 width="300"
                                 height="300"
@@ -327,7 +327,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de tapiz de autos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-03.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-2.jpg') }}"
                                 alt="Extracción de suciedad en tapiz de vehículo"
                                 width="300"
                                 height="300"
@@ -337,7 +337,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de tapiz de autos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/auto-04.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-1.jpg') }}"
                                 alt="Interior de auto limpio después del servicio"
                                 width="300"
                                 height="300"
@@ -373,7 +373,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-01.webp') }}"
+                            src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-celeste-antes.jpg') }}"
                             alt="Limpieza profesional de sillón"
                             width="900"
                             height="675"
@@ -384,7 +384,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de limpieza de sillones y sofás">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de sillones y sofás">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-02.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-celeste-despues.jpg') }}"
                                 alt="Aplicación de producto sobre sillón"
                                 width="300"
                                 height="300"
@@ -440,7 +440,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-01.webp') }}"
+                            src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-azul.jpg') }}"
                             alt="Limpieza de sillas de comedor tapizadas"
                             width="900"
                             height="675"
@@ -451,7 +451,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de limpieza de sillas de comedor">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de sillas de comedor">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-02.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-1.jpg') }}"
                                 alt="Limpieza de tapiz de silla"
                                 width="300"
                                 height="300"
@@ -461,7 +461,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de sillas de comedor">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-03.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-2.jpg') }}"
                                 alt="Proceso de lavado de silla tapizada"
                                 width="300"
                                 height="300"
@@ -471,7 +471,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de sillas de comedor">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-04.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-3.jpg') }}"
                                 alt="Silla tapizada limpia después del servicio"
                                 width="300"
                                 height="300"
@@ -507,7 +507,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/colchones/colchon-01.webp') }}"
+                            src="{{ asset('assets/img/servicios-destacados/colchones/cama-2-despues.jpg') }}"
                             alt="Lavado profesional de colchón"
                             width="900"
                             height="675"
@@ -518,7 +518,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de lavado de colchones">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de lavado de colchones">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/colchones/colchon-02.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/colchones/cama-2-antes.jpg') }}"
                                 alt="Proceso de limpieza de colchón"
                                 width="300"
                                 height="300"
@@ -528,7 +528,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de lavado de colchones">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/colchones/colchon-03.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/colchones/colchon-1.jpg') }}"
                                 alt="Extracción de suciedad de colchón"
                                 width="300"
                                 height="300"
@@ -538,7 +538,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de lavado de colchones">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/colchones/colchon-04.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/colchones/colchon-2.jpg') }}"
                                 alt="Colchón limpio después del servicio"
                                 width="300"
                                 height="300"
