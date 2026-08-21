@@ -748,17 +748,18 @@
 
                     <div class="ba-info">
                         <span class="tag">Lavado y encerado de pisos</span>
-                        <h3>Recuperación total de superficies</h3>
+                        <h3>Pisos limpios, protegidos y con mejor brillo</h3>
                         <p>
-                            Ideal para pisos con suciedad acumulada, manchas o pérdida de brillo
-                            en oficinas y espacios pequeños.
+                            Recuperamos pisos con suciedad acumulada, manchas o pérdida de brillo.
+                            Adaptamos el tratamiento según el material y el estado de la superficie.
                         </p>
+
                         <ol class="ba-steps">
-                            <li>Barrido y retiro de suciedad suelta.</li>
+                            <li>Inspección del tipo y condición del piso.</li>
+                            <li>Barrido y retiro de polvo o residuos.</li>
                             <li>Aplicación de detergente desengrasante.</li>
-                            <li>Fregado mecánico o manual según superficie.</li>
-                            <li>Enjuague y secado completo.</li>
-                            <li>Aplicación de sellador o cera de brillo.</li>
+                            <li>Fregado manual o mecánico según necesidad.</li>
+                            <li>Secado, revisión y aplicación de brillo si corresponde.</li>
                         </ol>
                         <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Lavado y encerado de pisos">
                             Cotizar este servicio
@@ -800,17 +801,18 @@
 
                     <div class="ba-info">
                         <span class="tag">Limpieza de camas</span>
-                        <h3>Bases cama e implementos más higiénicos</h3>
+                        <h3>Una base de cama más limpia y fresca</h3>
                         <p>
-                            Eliminamos polvo, ácaros y manchas devolviendo frescura a la
-                            base de tu cama.
+                            Realizamos limpieza profunda de bases tapizadas para retirar polvo,
+                            suciedad, manchas y olores acumulados por el uso diario.
                         </p>
+
                         <ol class="ba-steps">
-                            <li>Aspirado profundo de la superficie.</li>
-                            <li>Evaluación del tipo de tela.</li>
-                            <li>Aplicación de shampoo especializado.</li>
-                            <li>Extracción de humedad y suciedad.</li>
-                            <li>Secado y revisión final.</li>
+                            <li>Revisión del tapiz y zonas a tratar.</li>
+                            <li>Aspirado profundo de toda la superficie.</li>
+                            <li>Tratamiento de manchas o suciedad localizada.</li>
+                            <li>Aplicación de producto adecuado para la tela.</li>
+                            <li>Extracción de humedad y secado controlado.</li>
                         </ol>
                         <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de camas">
                             Cotizar este servicio
@@ -852,17 +854,18 @@
 
                     <div class="ba-info">
                         <span class="tag">Limpieza de colchones</span>
-                        <h3>Duerme limpio, duerme mejor</h3>
+                        <h3>Un colchón más limpio para descansar mejor</h3>
                         <p>
-                            Eliminamos ácaros, manchas y malos olores para un descanso
-                            más saludable.
+                            Ayudamos a eliminar polvo, manchas, olores y suciedad acumulada para
+                            mejorar la higiene y frescura de tu espacio de descanso.
                         </p>
+
                         <ol class="ba-steps">
+                            <li>Evaluación general del estado del colchón.</li>
                             <li>Aspirado profundo de la superficie.</li>
-                            <li>Evaluación del tipo de tela.</li>
-                            <li>Aplicación de shampoo especializado.</li>
-                            <li>Extracción de humedad y suciedad.</li>
-                            <li>Secado y revisión final.</li>
+                            <li>Revisión de manchas y zonas de mayor uso.</li>
+                            <li>Aplicación de shampoo o producto especializado.</li>
+                            <li>Extracción de humedad y secado controlado.</li>
                         </ol>
                         <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de colchones">
                             Cotizar este servicio
@@ -904,17 +907,18 @@
 
                     <div class="ba-info">
                         <span class="tag">Limpieza de sillas</span>
-                        <h3>Sillas de oficina y comedor renovadas</h3>
+                        <h3>Sillas renovadas para tu hogar u oficina</h3>
                         <p>
-                            Tratamiento especializado para telas, cuero y superficies
-                            de uso diario.
+                            Limpiamos sillas de comedor, oficina o espera para retirar polvo,
+                            manchas y suciedad acumulada en telas de uso frecuente.
                         </p>
+
                         <ol class="ba-steps">
-                            <li>Aspirado profundo de la superficie.</li>
-                            <li>Evaluación del tipo de tela.</li>
-                            <li>Aplicación de shampoo especializado.</li>
-                            <li>Extracción de humedad y suciedad.</li>
-                            <li>Secado y revisión final.</li>
+                            <li>Evaluación del tapiz y tipo de material.</li>
+                            <li>Aspirado para retirar polvo y residuos.</li>
+                            <li>Tratamiento de manchas según la tela.</li>
+                            <li>Aplicación de producto de limpieza especializado.</li>
+                            <li>Extracción, secado y revisión final.</li>
                         </ol>
                         <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillas">
                             Cotizar este servicio
@@ -956,17 +960,18 @@
 
                     <div class="ba-info">
                         <span class="tag">Limpieza de sofas</span>
-                        <h3>Sofas como nuevos</h3>
+                        <h3>Sofás más limpios, frescos y agradables</h3>
                         <p>
-                            Ideal para sofas de living, oficina o espera con manchas
-                            o suciedad acumulada.
+                            Recuperamos muebles tapizados con manchas, olores o suciedad acumulada
+                            por el uso diario en hogares, oficinas y salas de espera.
                         </p>
+
                         <ol class="ba-steps">
-                            <li>Aspirado profundo de la superficie.</li>
-                            <li>Evaluación del tipo de tela.</li>
-                            <li>Aplicación de shampoo especializado.</li>
-                            <li>Extracción de humedad y suciedad.</li>
-                            <li>Secado y revisión final.</li>
+                            <li>Evaluación del tipo de tela y estado del sofá.</li>
+                            <li>Aspirado profundo de cojines y superficies.</li>
+                            <li>Tratamiento de manchas o zonas específicas.</li>
+                            <li>Aplicación de producto adecuado al tapiz.</li>
+                            <li>Extracción de humedad, secado y revisión final.</li>
                         </ol>
                         <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sofas">
                             Cotizar este servicio
@@ -1008,17 +1013,18 @@
 
                     <div class="ba-info">
                         <span class="tag">Limpieza de muebles</span>
-                        <h3>Muebles tapizados renovados</h3>
+                        <h3>Muebles renovados y listos para disfrutar</h3>
                         <p>
-                            Tratamiento adecuado según el tipo de material del mueble,
-                            devolviendo su aspecto original.
+                            Aplicamos una limpieza adecuada para ayudar a recuperar la apariencia,
+                            frescura e higiene de muebles tapizados de distintos materiales.
                         </p>
+
                         <ol class="ba-steps">
+                            <li>Revisión del material y estado del tapiz.</li>
                             <li>Aspirado profundo de la superficie.</li>
-                            <li>Evaluación del tipo de tela.</li>
-                            <li>Aplicación de shampoo especializado.</li>
-                            <li>Extracción de humedad y suciedad.</li>
-                            <li>Secado y revisión final.</li>
+                            <li>Identificación de manchas y zonas de uso.</li>
+                            <li>Aplicación de producto según la tela.</li>
+                            <li>Extracción de suciedad, secado y control final.</li>
                         </ol>
                         <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de muebles">
                             Cotizar este servicio
