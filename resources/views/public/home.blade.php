@@ -721,15 +721,16 @@
                             <img
                                 class="ba-image ba-image-before"
                                 src="{{ asset('assets/img/antes-despues/piso-azul-despues.webp') }}"
-                                alt="Piso antes del servicio de limpieza"
+                                alt="Piso después del servicio de limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
                             >
+
                             <img
                                 class="ba-image ba-image-after"
                                 src="{{ asset('assets/img/antes-despues/piso-azul-antes.webp') }}"
-                                alt="Piso después del servicio de limpieza"
+                                alt="Piso antes del servicio de limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
@@ -774,15 +775,16 @@
                             <img
                                 class="ba-image ba-image-before"
                                 src="{{ asset('assets/img/antes-despues/cama-despues.webp') }}"
-                                alt="Cama antes de la limpieza"
+                                alt="Base de cama después de la limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
                             >
+
                             <img
                                 class="ba-image ba-image-after"
                                 src="{{ asset('assets/img/antes-despues/cama-antes.webp') }}"
-                                alt="Cama después de la limpieza"
+                                alt="Base de cama antes de la limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
@@ -827,19 +829,20 @@
                             <img
                                 class="ba-image ba-image-before"
                                 src="{{ asset('assets/img/antes-despues/colchon-despues.webp') }}"
-                                alt="Colchón antes de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-                            <img
-                                class="ba-image ba-image-after"
-                                src="{{ asset('assets/img/antes-despues/colchon-antes.webp') }}"
                                 alt="Colchón después de la limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
                             >
+
+                            <img
+                                class="ba-image ba-image-after"
+                                src="{{ asset('assets/img/antes-despues/colchon-antes.webp') }}"
+                                alt="Colchón antes de la limpieza"
+                                width="800"
+                                height="600"
+                                loading="lazy"
+>
                             <div class="ba-divider"></div>
                             <input
                                 type="range"
@@ -880,15 +883,16 @@
                             <img
                                 class="ba-image ba-image-before"
                                 src="{{ asset('assets/img/antes-despues/silla-azul-despues.webp') }}"
-                                alt="Silla antes de la limpieza"
+                                alt="Silla después de la limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
                             >
+
                             <img
                                 class="ba-image ba-image-after"
                                 src="{{ asset('assets/img/antes-despues/silla-azul-antes.webp') }}"
-                                alt="Silla después de la limpieza"
+                                alt="Silla antes de la limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
@@ -933,15 +937,16 @@
                             <img
                                 class="ba-image ba-image-before"
                                 src="{{ asset('assets/img/antes-despues/sofa-gris-despues.webp') }}"
-                                alt="Sofa antes de la limpieza"
+                                alt="Sofá después de la limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
                             >
+
                             <img
                                 class="ba-image ba-image-after"
                                 src="{{ asset('assets/img/antes-despues/sofa-gris-antes.webp') }}"
-                                alt="Sofa después de la limpieza"
+                                alt="Sofá antes de la limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
@@ -986,15 +991,16 @@
                             <img
                                 class="ba-image ba-image-before"
                                 src="{{ asset('assets/img/antes-despues/muebles-despues.webp') }}"
-                                alt="Mueble antes de la limpieza"
+                                alt="Mueble después de la limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
                             >
+
                             <img
                                 class="ba-image ba-image-after"
                                 src="{{ asset('assets/img/antes-despues/mueble-antes.webp') }}"
-                                alt="Mueble después de la limpieza"
+                                alt="Mueble antes de la limpieza"
                                 width="800"
                                 height="600"
                                 loading="lazy"
