@@ -298,17 +298,20 @@
 
                 <div class="feature-content">
                     <span class="tag">Lavado de alfombras</span>
-                    <h3>Alfombras libres de suciedad, ácaros y malos olores</h3>
+                    <h3>Alfombras limpias, frescas y renovadas</h3>
                     <p>
-                        Recuperamos el aspecto y la higiene de tus alfombras con un proceso
-                        especializado que respeta el tipo de fibra y el nivel de suciedad.
+                        Realizamos una limpieza profunda para recuperar la apariencia, higiene y
+                        frescura de tus alfombras. Evaluamos el material y nivel de suciedad para
+                        aplicar un tratamiento adecuado, cuidando las fibras y el color.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Aspirado profundo previo al tratamiento.</li>
-                        <li>Evaluación del tipo de fibra y nivel de suciedad.</li>
-                        <li>Aplicación de shampoo especializado.</li>
-                        <li>Extracción de humedad y secado controlado.</li>
+                        <li>Revisión del tipo de alfombra y sus fibras.</li>
+                        <li>Evaluación de manchas, olores y suciedad acumulada.</li>
+                        <li>Aspirado previo para retirar polvo y residuos.</li>
+                        <li>Aplicación de shampoo o producto especializado.</li>
+                        <li>Lavado, cepillado y extracción de suciedad.</li>
+                        <li>Secado controlado y revisión final del resultado.</li>
                     </ul>
 
                     <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Lavado de alfombras">
@@ -365,17 +368,21 @@
 
                 <div class="feature-content">
                     <span class="tag">Limpieza de tapiz de autos</span>
-                    <h3>Interior del vehículo limpio y sin manchas</h3>
+                    <h3>Interior limpio, fresco y más cómodo para viajar</h3>
+
                     <p>
-                        Tratamiento especializado para asientos, techo y superficies
-                        textiles del interior de tu auto.
+                        Recuperamos la limpieza del interior de tu vehículo mediante un tratamiento
+                        especializado para asientos, pisos, techo y otras superficies textiles.
+                        Trabajamos según el tipo de tapiz y las necesidades reales de cada auto.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Revisión del estado del tapiz.</li>
-                        <li>Aspirado profundo de asientos y piso.</li>
-                        <li>Aplicación de shampoo especializado.</li>
-                        <li>Extracción de humedad y secado final.</li>
+                        <li>Revisión general del estado del interior.</li>
+                        <li>Aspirado profundo de asientos, piso y maletero.</li>
+                        <li>Tratamiento de manchas y suciedad localizada.</li>
+                        <li>Aplicación de shampoo adecuado para el tapiz.</li>
+                        <li>Extracción de humedad, polvo y residuos.</li>
+                        <li>Secado y revisión final de cada superficie.</li>
                     </ul>
 
                     <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de tapiz de autos">
@@ -432,17 +439,21 @@
 
                 <div class="feature-content">
                     <span class="tag">Limpieza de sillones y sofás</span>
-                    <h3>Sillones y sofás como nuevos</h3>
+                    <h3>Renueva tus sillones y sofás con una limpieza profunda</h3>
+
                     <p>
-                        Ideal para living, oficinas y salas de espera con manchas o suciedad
-                        acumulada por el uso diario.
+                        Eliminamos suciedad acumulada, manchas y olores en muebles tapizados de
+                        hogares, oficinas y salas de espera. Aplicamos un proceso cuidadoso según
+                        la tela, el uso del mueble y el estado de cada superficie.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Aspirado profundo de la superficie.</li>
-                        <li>Evaluación del tipo de tela.</li>
-                        <li>Aplicación de shampoo especializado.</li>
-                        <li>Secado y revisión final.</li>
+                        <li>Evaluación del material y estado del tapiz.</li>
+                        <li>Aspirado profundo de cojines y superficies.</li>
+                        <li>Tratamiento de manchas según el tipo de tela.</li>
+                        <li>Aplicación de shampoo o producto especializado.</li>
+                        <li>Extracción de suciedad y humedad acumulada.</li>
+                        <li>Secado controlado y revisión del resultado.</li>
                     </ul>
 
                     <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillones y sofás">
@@ -499,17 +510,21 @@
 
                 <div class="feature-content">
                     <span class="tag">Limpieza de sillas de comedor tapizadas</span>
-                    <h3>Sillas tapizadas higienizadas y sin manchas</h3>
+                    <h3>Sillas higienizadas para disfrutar cada momento</h3>
+
                     <p>
-                        Tratamiento cuidadoso para telas de sillas de comedor, expuestas a
-                        manchas de comida y al uso frecuente.
+                        Limpiamos sillas tapizadas expuestas al uso diario, manchas de alimentos,
+                        polvo y suciedad acumulada. Adaptamos el tratamiento al tipo de tela para
+                        recuperar una apariencia más limpia, fresca y cuidada.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Revisión del estado de la tela.</li>
-                        <li>Aspirado y limpieza base.</li>
-                        <li>Aplicación de producto según el tipo de mancha.</li>
-                        <li>Secado y control final.</li>
+                        <li>Revisión del tapiz y tipo de tela.</li>
+                        <li>Aspirado para retirar polvo y migas.</li>
+                        <li>Evaluación de manchas y zonas de mayor uso.</li>
+                        <li>Aplicación de producto según la necesidad.</li>
+                        <li>Limpieza y extracción de suciedad del tapiz.</li>
+                        <li>Secado y control final antes de la entrega.</li>
                     </ul>
 
                     <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillas de comedor tapizadas">
@@ -566,17 +581,21 @@
 
                 <div class="feature-content">
                     <span class="tag">Limpieza de colchones</span>
-                    <h3>Colchones más limpios para un mejor descanso</h3>
+                    <h3>Un descanso más fresco, limpio e higiénico</h3>
+
                     <p>
-                        Eliminamos suciedad, manchas y malos olores, devolviendo frescura e
-                        higiene a tu colchón.
+                        Realizamos limpieza profunda de colchones para ayudar a eliminar polvo,
+                        manchas, olores y suciedad acumulada por el uso diario. El proceso se adapta
+                        al tipo de tela y condición de cada colchón.
                     </p>
 
                     <ul class="feature-list">
+                        <li>Evaluación del estado general del colchón.</li>
                         <li>Aspirado profundo de la superficie.</li>
-                        <li>Evaluación del tipo de tela.</li>
-                        <li>Aplicación de shampoo especializado.</li>
-                        <li>Extracción de humedad y secado controlado.</li>
+                        <li>Revisión de manchas, olores y zonas de uso.</li>
+                        <li>Aplicación de shampoo o producto especializado.</li>
+                        <li>Extracción de humedad y suciedad acumulada.</li>
+                        <li>Secado controlado y revisión final.</li>
                     </ul>
 
                     <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de colchones">
@@ -633,17 +652,21 @@
 
                 <div class="feature-content">
                     <span class="tag">Limpieza de pisos flotantes y cerámicas</span>
-                    <h3>Pisos limpios, protegidos y con mejor terminación</h3>
+                    <h3>Pisos cuidados, limpios y con mejor terminación</h3>
+
                     <p>
-                        Realizamos limpieza y mantención de pisos flotantes y cerámicos,
-                        cuidando cada superficie según su material y estado.
+                        Realizamos limpieza y mantención de pisos flotantes y cerámicos para retirar
+                        suciedad acumulada, mejorar su apariencia y aplicar el tratamiento adecuado
+                        según el material, uso del espacio y condición de la superficie.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Retiro de polvo y suciedad acumulada.</li>
-                        <li>Aplicación de productos adecuados para cada superficie.</li>
+                        <li>Revisión del tipo y estado del piso.</li>
+                        <li>Retiro de polvo, residuos y suciedad suelta.</li>
+                        <li>Tratamiento de manchas o zonas de mayor uso.</li>
+                        <li>Aplicación de productos adecuados al material.</li>
                         <li>Fregado manual o mecánico según necesidad.</li>
-                        <li>Secado y revisión final del resultado.</li>
+                        <li>Secado y revisión final de la terminación.</li>
                     </ul>
 
                     <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de pisos flotantes y cerámicas">
