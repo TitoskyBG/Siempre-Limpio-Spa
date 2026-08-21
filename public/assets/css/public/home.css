@@ -164,8 +164,7 @@
 
 /* ===========================================================
    SERVICIOS DESTACADOS
-   Mantiene marcos iguales aunque las fotos originales sean
-   verticales 3:4, horizontales 4:3 o cuadradas.
+   Galerías cuadradas con tarjetas de texto alineadas.
 =========================================================== */
 
 .featured-services .container {
@@ -194,9 +193,8 @@
 }
 
 /*
-   Marco fijo 4:3:
-   - Todas las galerías ocupan el mismo alto.
-   - object-fit: contain muestra fotos verticales completas.
+   Imagen principal cuadrada:
+   diseñada para fotos 1200 x 1200 px.
 */
 .gallery-main {
     position: relative;
@@ -217,14 +215,13 @@
     object-position: center;
 }
 
-/* Fila con las tres miniaturas; los marcos también son 4:3 */
+/* Fila de tres miniaturas cuadradas */
 .gallery-thumbs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
-/* Las miniaturas son botones porque intercambian la imagen principal */
 .thumb {
     position: relative;
     width: 100%;
@@ -247,7 +244,6 @@
     object-position: center;
 }
 
-/* Ayuda al usuario a reconocer que puede presionar las imágenes */
 .thumb:hover,
 .thumb:focus-visible {
     border-color: var(--color-primary);
@@ -260,8 +256,14 @@
     outline-offset: 3px;
 }
 
+/*
+   Tarjeta de contenido:
+   - altura igualada con la galería gracias a align-items: stretch
+   - contenido siempre parte arriba
+   - botón se envía al fondo con margin-top: auto
+*/
 .feature-content {
-    min-height: 420px;
+    min-height: 540px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -270,21 +272,50 @@
     border: 1px solid rgba(20, 52, 71, 0.08);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-soft);
-    padding: 3rem 2rem 2rem;
+    padding: 42px 32px 26px;
     box-sizing: border-box;
 }
 
-/*Para fijar el boton*/
+.feature-content .tag {
+    margin-bottom: 0.85rem;
+}
+
+.feature-content h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+}
+
+.feature-content p {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+    line-height: 1.65;
+}
+
+.feature-list {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: var(--color-text-soft);
+}
+
+.feature-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.45;
+}
+
+/*
+   El botón siempre queda al borde inferior interno de la tarjeta.
+   El padding-bottom de .feature-content define esa distancia.
+*/
 .feature-content .btn {
     width: 100%;
     margin-top: auto;
     text-align: center;
 }
 
-.feature-list {
-    padding-left: 1.1rem;
-    margin: 1rem 0 1.5rem;
-}
+/* ===========================================================
+   ANTES Y DESPUÉS
+=========================================================== */
 
 .before-after .ba-tabs {
     display: flex;
@@ -496,6 +527,10 @@
     justify-content: flex-end;
 }
 
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
+
 @media (max-width: 1100px) {
     .equipment-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -514,6 +549,19 @@
     .feature-block.reverse .feature-gallery,
     .feature-block.reverse .feature-content {
         order: initial;
+    }
+
+    /*
+       En una sola columna ya no hace falta igualar la altura
+       de la tarjeta con la galería.
+    */
+    .feature-content {
+        min-height: auto;
+        padding: 2rem;
+    }
+
+    .feature-content .btn {
+        margin-top: 2rem;
     }
 }
 
@@ -570,11 +618,14 @@
     .gallery-thumbs {
         gap: 0.75rem;
     }
+
+    .feature-content {
+        padding: 1.75rem 1.25rem;
+    }
 }
 
 /* -----------------------------------------------------------
    SECCIÓN COTIZAR
-   Tarjeta con formulario, usando la paleta azul/verde del sitio.
 ----------------------------------------------------------- */
 
 .quote-section {
@@ -632,7 +683,6 @@
     font-weight: 800;
 }
 
-/* Tarjeta blanca del formulario, resaltando sobre el fondo de color */
 .quote-card {
     background: var(--color-white);
     border-radius: var(--radius-lg);
@@ -722,7 +772,6 @@
     text-align: center;
 }
 
-/* Responsive: en tablet/móvil el formulario se apila debajo del texto */
 @media (max-width: 960px) {
     .quote-grid {
         grid-template-columns: 1fr;
