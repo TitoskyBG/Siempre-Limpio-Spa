@@ -929,7 +929,7 @@
 
                         <ol class="ba-steps">
                             <li>Evaluación del tapiz y tipo de material.</li>
-                            <li>Aspirado para retirar polvo y residuos.</li>
+                            <li>Aspirado profundo de la superficie.</li>
                             <li>Tratamiento de manchas según la tela.</li>
                             <li>Aplicación de producto de limpieza especializado.</li>
                             <li>Extracción, secado y revisión final.</li>
@@ -1036,8 +1036,8 @@
                         </p>
 
                         <ol class="ba-steps">
-                            <li>Revisión del material y estado del tapiz.</li>
-                            <li>Aspirado profundo de la superficie.</li>
+                            <li>Revisión del material y estado del mueble.</li>
+                            <li>Aspirado para retirar polvo y residuos.</li>
                             <li>Identificación de manchas y zonas de uso.</li>
                             <li>Aplicación de producto según la tela.</li>
                             <li>Extracción de suciedad, secado y control final.</li>
