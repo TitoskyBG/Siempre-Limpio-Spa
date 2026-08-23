@@ -124,8 +124,9 @@
                 <span class="tag">Equipos</span>
                 <h2>Equipos y herramientas con las que trabajamos</h2>
                 <p>
-                    Esta sección ayuda a transmitir profesionalismo, preparación y confianza
-                    al mostrar con qué herramientas se realiza cada servicio.
+                    Contamos con el equipamiento técnico necesario para abordar 
+                    cualquier nivel de exigencia, optimizando los tiempos de trabajo 
+                    y asegurando la máxima limpieza.
                 </p>
             </div>
 
@@ -141,7 +142,9 @@
                         >
                     </div>
                     <h3>Abrillantadora</h3>
-                    <p>Para limpieza profunda de alfombras, tapices, interiores y superficies de alto uso.</p>
+                    <p>Restauración y limpieza profunda para pisos duros y superficies de alto tráfico, 
+                        devolviendo el brillo y la pulcritud original.
+                    </p>
                 </article>
 
                 <article class="equipment-card">
@@ -155,7 +158,9 @@
                         >
                     </div>
                     <h3>Carros estrujadores</h3>
-                    <p>Escurrir mopas y paños de forma rápida y limpiar pisos grandes y zonas pequeñas.</p>
+                    <p>Optimizan los tiempos de lavado y garantizan la máxima higiene al separar 
+                        el agua limpia de la sucia durante la limpieza de pisos.
+                    </p>
                 </article>
 
                 <article class="equipment-card">
@@ -169,7 +174,9 @@
                         >
                     </div>
                     <h3>Hidrolavadoras</h3>
-                    <p>Muy útiles en exteriores, accesos, pisos y áreas con suciedad acumulada.</p>
+                    <p>Limpieza a alta presión ideal para remover suciedad incrustada en 
+                        fachadas, accesos, estacionamientos y superficies exteriores.
+                    </p>
                 </article>
 
                 <article class="equipment-card">
@@ -183,7 +190,9 @@
                         >
                     </div>
                     <h3>Aspiradora Profesional</h3>
-                    <p>Útil para quitar manchas profundas de alfombras de distinto tamaño y grosor, entregando resultados de calidad.</p>
+                    <p>Aspirado industrial de alta potencia para la eliminación eficaz de polvo, 
+                        residuos secos y humedad en alfombras y textiles.
+                    </p>
                 </article>
             </div>
         </div>
@@ -194,17 +203,17 @@
         <div class="container">
             <div class="section-heading">
                 <span class="tag">Nuestros servicios</span>
-                <h2>Servicios principales que ofrecemos</h2>
+                <h2>Servicios Principales que Ofrecemos</h2>
                 <p>
-                    En escritorio esta sección muestra una imagen central con los servicios
-                    distribuidos a los costados. En pantallas pequeñas se ordena
-                    automáticamente en formato vertical.
+                    Ofrecemos servicios de limpieza profesional ejecutados bajo los más altos 
+                    estándares de calidad, asegurando un entorno impecable y la máxima
+                    satisfacción en cada trabajo.
                 </p>
             </div>
 
             <div class="orbit-layout">
-                <a href="#cotizar" class="orbit-item js-cotizar-btn top-left" data-service="Aseo de hogar">
-                    Aseo de Hogar
+                <a href="#cotizar" class="orbit-item js-cotizar-btn top-left" data-service="Aseo de casas">
+                    Aseo de Casas
                 </a>
                 <a href="#cotizar" class="orbit-item js-cotizar-btn top-right" data-service="Aseo en condominios">
                     Aseo en Condominios
@@ -241,9 +250,9 @@
     {{-- ===================== SERVICIOS DESTACADOS ===================== --}}
     <section class="section featured-services section-tone-white" id="destacados">
         <div class="container">
-            <div class="section-heading left">
+            <div class="section-heading">
                 <span class="tag">Servicios destacados</span>
-                <h2>Servicios explicados en detalle</h2>
+                <h2>Servicios Explicados en Detalle</h2>
                 <p>
                     Conoce algunos de nuestros servicios especializados y revisa imágenes
                     reales del proceso y resultado de cada trabajo.
@@ -255,7 +264,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/lavado-alfombra/alfombra-1.jpg') }}"
+                            src="{{ asset('assets/img/servicios-destacados/lavado-alfombra/piso-limpio.webp') }}"
                             alt="Lavado profesional de alfombra"
                             width="900"
                             height="675"
@@ -276,7 +285,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de lavado de alfombras">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombra/alfombra-3.jpg') }}"
+                                src="{{ asset('assets/img/servicios-destacados/lavado-alfombra/piso-limpio.webp') }}"
                                 alt="Aplicación de producto para lavar alfombra"
                                 width="300"
                                 height="300"
@@ -325,7 +334,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-4.jpg') }}"
+                            src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-auto-limpio.webp') }}"
                             alt="Limpieza profesional de tapiz de auto"
                             width="900"
                             height="675"
@@ -336,7 +345,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de limpieza de tapiz de autos">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de tapiz de autos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-3.jpg') }}"
+                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-auto-sucio.webp') }}"
                                 alt="Limpieza de asientos de auto"
                                 width="300"
                                 height="300"
@@ -346,7 +355,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de tapiz de autos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-2.jpg') }}"
+                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-auto-2-limpio.webp') }}"
                                 alt="Extracción de suciedad en tapiz de vehículo"
                                 width="300"
                                 height="300"
@@ -356,7 +365,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de tapiz de autos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-1.jpg') }}"
+                                src="{{ asset('assets/img/servicios-destacados/tapiz-autos/tapiz-auto-2-sucio.webp') }}"
                                 alt="Interior de auto limpio después del servicio"
                                 width="300"
                                 height="300"
@@ -396,7 +405,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-celeste-antes.jpg') }}"
+                            src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-celeste-antes.webp') }}"
                             alt="Limpieza profesional de sillón"
                             width="900"
                             height="675"
@@ -407,7 +416,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de limpieza de sillones y sofás">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de sillones y sofás">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-celeste-despues.jpg') }}"
+                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-celeste-despues.webp') }}"
                                 alt="Aplicación de producto sobre sillón"
                                 width="300"
                                 height="300"
@@ -417,7 +426,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de sillones y sofás">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-rosado-limpio.webp') }}"
                                 alt="Proceso de limpieza de sofá"
                                 width="300"
                                 height="300"
@@ -427,7 +436,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de sillones y sofás">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-1.webp') }}"
+                                src="{{ asset('assets/img/servicios-destacados/sillones-sofas/sofa-rosado-sucio.webp') }}"
                                 alt="Sofá limpio después del servicio"
                                 width="300"
                                 height="300"
@@ -538,7 +547,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/colchones/cama-2-despues.jpg') }}"
+                            src="{{ asset('assets/img/servicios-destacados/colchones/cama-2-despues.webp') }}"
                             alt="Lavado profesional de colchón"
                             width="900"
                             height="675"
@@ -549,7 +558,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de lavado de colchones">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de lavado de colchones">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/colchones/cama-2-antes.jpg') }}"
+                                src="{{ asset('assets/img/servicios-destacados/colchones/cama-2-antes.webp') }}"
                                 alt="Proceso de limpieza de colchón"
                                 width="300"
                                 height="300"
@@ -609,7 +618,7 @@
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe-despues.jpg') }}"
+                            src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe-despues.webp') }}"
                             alt="Limpieza profesional de pisos flotantes y cerámicas"
                             width="900"
                             height="675"
@@ -620,7 +629,7 @@
                     <div class="gallery-thumbs" aria-label="Galería de limpieza de pisos flotantes y cerámicas">
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de pisos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe-antes.jpg') }}"
+                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe-antes.webp') }}"
                                 alt="Limpieza de piso cerámico"
                                 width="300"
                                 height="300"
@@ -630,7 +639,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de pisos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe2-despues.jpg') }}"
+                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-flotante-limpio.webp') }}"
                                 alt="Lavado de piso flotante"
                                 width="300"
                                 height="300"
@@ -640,7 +649,7 @@
 
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de pisos">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-cafe2-antes.jpg') }}"
+                                src="{{ asset('assets/img/servicios-destacados/pisos/piso-flotante-sucio.webp') }}"
                                 alt="Piso limpio después del servicio"
                                 width="300"
                                 height="300"
@@ -1106,7 +1115,7 @@
                             id="cotizar-descripcion"
                             name="descripcion"
                             rows="4"
-                            placeholder="Ej: Necesito lavado de 3 sofas de oficina, disponibilidad en la tarde."
+                            placeholder="Ej: Necesito lavado de 2 alfombras, 1 sofa, disponibilidad en la tarde."
                         ></textarea>
                     </div>
 
