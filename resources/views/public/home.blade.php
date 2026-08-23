@@ -1031,16 +1031,16 @@
                         <span class="tag">Limpieza de muebles</span>
                         <h3>Muebles renovados y listos para disfrutar</h3>
                         <p>
-                            Aplicamos una limpieza adecuada para ayudar a recuperar la apariencia,
-                            frescura e higiene de muebles tapizados de distintos materiales.
+                             Eliminamos suciedad profunda, grasa y polvo acumulado en clósets,
+                            repisas y muebles de cocina. Devuelve la higiene a tu hogar.
                         </p>
 
                         <ol class="ba-steps">
                             <li>Revisión del material y estado del mueble.</li>
-                            <li>Aspirado para retirar polvo y residuos.</li>
-                            <li>Identificación de manchas y zonas de uso.</li>
-                            <li>Aplicación de producto según la tela.</li>
-                            <li>Extracción de suciedad, secado y control final.</li>
+                            <li>Retiro de suciedad suelta y residuos.</li>
+                            <li>Tratamiento de manchas, grasa y pegamento.</li>
+                            <li>Aplicación de productos seguros según el material.</li>
+                            <li>Secado profundo y revisión final contigo.</li>
                         </ol>
                         <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de muebles">
                             Cotizar este servicio
