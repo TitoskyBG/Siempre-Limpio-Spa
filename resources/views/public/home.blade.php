@@ -664,13 +664,14 @@
                     <h3>Pisos cuidados, limpios y con mejor terminación</h3>
 
                     <p>
-                        Realizamos limpieza y mantención de pisos flotantes y cerámicos para retirar
-                        suciedad acumulada, mejorar su apariencia y aplicar el tratamiento adecuado
-                        según el material, uso del espacio y condición de la superficie.
+                        Realizamos limpieza, decapado y mantención profunda de pisos flotantes y cerámicas.
+                        Removemos capas viejas de cera, suciedad incrustada y residuos químicos para devolver
+                        el aspecto original y aplicar el tratamiento adecuado según el material.
                     </p>
 
                     <ul class="feature-list">
                         <li>Revisión del tipo y estado del piso.</li>
+                        <li>Decapado controlado.</li>
                         <li>Retiro de polvo, residuos y suciedad suelta.</li>
                         <li>Tratamiento de manchas o zonas de mayor uso.</li>
                         <li>Aplicación de productos adecuados al material.</li>
