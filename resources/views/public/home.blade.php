@@ -509,7 +509,7 @@
                         <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de Limpieza de Interiores y Exteriores">
                             <img
                                 src="{{ asset('assets/img/servicios-destacados/Interiores-Exteriores/oficina.webp') }}"
-                                alt="Limpiezam de oficina"
+                                alt="Limpieza  de oficina"
                                 width="300"
                                 height="300"
                                 loading="lazy"
