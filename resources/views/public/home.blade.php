@@ -100,7 +100,7 @@
 
                     <div class="hero-image">
                         <img
-                            src="{{ asset('assets/img/inicio/princio-referencia.jpg') }}"
+                            src="{{ asset('assets/img/inicio/hero.webp') }}"
                             alt="Equipo de Siempre Limpio SPA realizando un servicio de limpieza"
                             width="900"
                             height="675"
@@ -225,7 +225,7 @@
                 <div class="orbit-center">
                     <div class="orbit-image large">
                         <img
-                            src="{{ asset('assets/img/orbita/Imagen-Referencia.jpg') }}"
+                            src="{{ asset('assets/img/orbita/orbita-servicios.webp') }}"
                             alt="Equipo de Siempre Limpio SPA realizando un servicio de limpieza"
                             width="650"
                             height="650"
