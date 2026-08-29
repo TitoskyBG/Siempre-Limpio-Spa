@@ -73,6 +73,7 @@
 
                 <h1>Soluciones limpias, ordenadas y confiables para tu espacio.</h1>
 
+
                 <p>
                     Siempre Limpio SPA entrega servicios de aseo, mantención y limpieza
                     especializada para oficinas, espacios pequeños, vehículos, tapicerías
@@ -471,44 +472,44 @@
                 </div>
             </article>
 
-            {{-- ==================== SILLAS DE COMEDOR ==================== --}}
+            {{-- ==================== INTERIORES Y EXTERIORES ==================== --}}
             <article class="feature-block reverse">
                 <div class="feature-gallery">
                     <div class="gallery-main">
                         <img
-                            src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-azul.jpg') }}"
-                            alt="Limpieza de sillas de comedor tapizadas"
+                            src="{{ asset('assets/img/servicios-destacados/Interiores-Exteriores/casa.webp') }}"
+                            alt="Limpieza de casa"
                             width="900"
                             height="675"
                             loading="lazy"
                         >
                     </div>
 
-                    <div class="gallery-thumbs" aria-label="Galería de limpieza de sillas de comedor">
-                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de limpieza de sillas de comedor">
+                    <div class="gallery-thumbs" aria-label="Galería de Limpieza de Interiores y Exteriores">
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 2 de Limpieza de Interiores y Exteriores">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-1.jpg') }}"
-                                alt="Limpieza de tapiz de silla"
+                                src="{{ asset('assets/img/servicios-destacados/Interiores-Exteriores/cocina.webp') }}"
+                                alt="Limpieza de cocina"
                                 width="300"
                                 height="300"
                                 loading="lazy"
                             >
                         </button>
 
-                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de limpieza de sillas de comedor">
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 3 de Limpieza de Interiores y Exteriores">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-2.jpg') }}"
-                                alt="Proceso de lavado de silla tapizada"
+                                src="{{ asset('assets/img/servicios-destacados/Interiores-Exteriores/exterior.webp') }}"
+                                alt="Lavado de exterior casa"
                                 width="300"
                                 height="300"
                                 loading="lazy"
                             >
                         </button>
 
-                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de limpieza de sillas de comedor">
+                        <button class="thumb gallery-thumb" type="button" aria-label="Ver imagen 4 de Limpieza de Interiores y Exteriores">
                             <img
-                                src="{{ asset('assets/img/servicios-destacados/sillas-comedor/silla-3.jpg') }}"
-                                alt="Silla tapizada limpia después del servicio"
+                                src="{{ asset('assets/img/servicios-destacados/Interiores-Exteriores/oficina.webp') }}"
+                                alt="Limpiezam de oficina"
                                 width="300"
                                 height="300"
                                 loading="lazy"
@@ -518,25 +519,26 @@
                 </div>
 
                 <div class="feature-content">
-                    <span class="tag">Limpieza de sillas de comedor tapizadas</span>
-                    <h3>Sillas higienizadas para disfrutar cada momento</h3>
+                    <span class="tag">Limpieza de Interiores y Exteriores</span>
+                    <h3>Soluciones completas de limpieza para cada rincón</h3>
 
                     <p>
-                        Limpiamos sillas tapizadas expuestas al uso diario, manchas de alimentos,
-                        polvo y suciedad acumulada. Adaptamos el tratamiento al tipo de tela para
-                        recuperar una apariencia más limpia, fresca y cuidada.
+                        Brindamos un servicio integral de aseo profundo para casas, oficinas y condominios. Abarcamos 
+                        desde la higienización de interiores hasta el lavado de zonas exteriores como balcones, 
+                        terrazas, muros y techumbres, adaptando nuestras técnicas para renovar y proteger cada 
+                        rincón de tus instalaciones.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Revisión del tapiz y tipo de tela.</li>
-                        <li>Aspirado para retirar polvo y migas.</li>
-                        <li>Evaluación de manchas y zonas de mayor uso.</li>
-                        <li>Aplicación de producto según la necesidad.</li>
-                        <li>Limpieza y extracción de suciedad del tapiz.</li>
-                        <li>Secado y control final antes de la entrega.</li>
+                        <li>Inspección técnica y evaluación de superficies (interiores y exteriores).</li>
+                        <li>Despeje y retiro inicial de residuos gruesos y polvo en seco.</li>
+                        <li>Limpieza profunda de interiores: pisos, superficies de trabajo y áreas comunes.</li>
+                        <li>Lavado especializado de exteriores: muros, balcones y cubiertas de techos.</li>
+                        <li>Aplicación de insumos certificados y técnicas de desinfección.</li>
+                        <li>Revisión final de calidad para garantizar un acabado impecable.</li>
                     </ul>
 
-                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillas de comedor tapizadas">
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de Interiores y Exteriores">
                         Cotizar
                     </a>
                 </div>
