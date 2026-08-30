@@ -69,26 +69,18 @@
     <section class="hero section-tone-blue" id="inicio">
         <div class="container hero-grid">
             <div class="hero-content">
-                <span class="tag">Servicios de limpieza y mantención</span>
+                <span class="tag">{{ $settings['hero_tag'] ?? 'Servicios de limpieza y mantención' }}</span>
 
-                <h1>Soluciones limpias, ordenadas y confiables para tu espacio.</h1>
-
+                <h1>{{ $settings['hero_title'] ?? 'Soluciones limpias, ordenadas y confiables para tu espacio.' }}</h1>
 
                 <p>
-                    Siempre Limpio SPA entrega servicios de aseo, mantención y limpieza
-                    especializada para oficinas, espacios pequeños, vehículos, tapicerías
-                    y otras necesidades puntuales.
+                    {{ $settings['hero_description'] ?? 'Siempre Limpio SPA entrega servicios de aseo, mantención y limpieza especializada para oficinas, espacios pequeños, vehículos, tapicerías y otras necesidades puntuales.' }}
                 </p>
 
                 <div class="hero-buttons">
-                    <a
-                        href="#cotizar"
-                        class="btn btn-primary js-cotizar-btn"
-                        data-service=""
-                    >
+                    <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="">
                         Solicitar cotización
                     </a>
-
                     <a href="#servicios" class="btn btn-secondary">
                         Ver servicios
                     </a>
@@ -102,7 +94,7 @@
                     <div class="hero-image">
                         <img
                             src="{{ asset('assets/img/inicio/hero.webp') }}"
-                            alt="Equipo de Siempre Limpio SPA realizando un servicio de limpieza"
+                            alt="{{ $settings['hero_image_alt'] ?? 'Equipo de Siempre Limpio SPA realizando un servicio de limpieza' }}"
                             width="900"
                             height="675"
                             loading="eager"
@@ -110,13 +102,12 @@
                     </div>
 
                     <p class="hero-image-caption">
-                        Trabajamos con dedicación para entregar espacios limpios, frescos
-                        y listos para disfrutar.
+                        {{ $settings['hero_image_caption'] ?? 'Trabajamos con dedicación para entregar espacios limpios, frescos y listos para disfrutar.' }}
                     </p>
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
     {{-- ===================== EQUIPOS ===================== --}}
     <section class="section equipments section-tone-white" id="equipos">
@@ -1152,20 +1143,19 @@
         <div class="container section-grid">
             <div>
                 <span class="tag">Contacto</span>
-                <h2>Estamos listos para ayudarte</h2>
+                <h2>{{ $settings['contact_title'] ?? 'Estamos listos para ayudarte' }}</h2>
                 <p>
-                    Atendemos en Talca, Maule, Curicó, San Rafael, Linares y San Clemente.
-                    Escríbenos por Instagram o completa el formulario de cotización.
+                    {{ $settings['contact_description'] ?? 'Atendemos en Talca, Maule, Curicó, San Rafael, Linares y San Clemente. Escríbenos por Instagram o completa el formulario de cotización.' }}
                 </p>
             </div>
 
             <div class="contact-card">
                 <h3>Datos de contacto</h3>
-                <p>Teléfono / WhatsApp: +56 9 7712 2022</p>
-                <p>Instagram: @siemprelimpiospa</p>
-                <p>Horario: Lunes a viernes 09:00 - 21:00 hrs</p>
-                <p>Sábado: 09:00 - 17:00 hrs</p>
-                <p>Domingo: Cerrado</p>
+                <p>Teléfono / WhatsApp: {{ $settings['contact_phone'] ?? '+56 9 7712 2022' }}</p>
+                <p>Instagram: {{ $settings['contact_instagram'] ?? '@siemprelimpiospa' }}</p>
+                <p>Horario: {{ $settings['contact_hours_weekday'] ?? 'Lunes a viernes 09:00 - 21:00 hrs' }}</p>
+                <p>{{ $settings['contact_hours_saturday'] ?? 'Sábado: 09:00 - 17:00 hrs' }}</p>
+                <p>{{ $settings['contact_hours_sunday'] ?? 'Domingo: Cerrado' }}</p>
             </div>
         </div>
     </section>

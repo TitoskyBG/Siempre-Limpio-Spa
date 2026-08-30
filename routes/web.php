@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 
@@ -10,7 +11,7 @@ use App\Http\Controllers\Admin\DashboardController;
 |--------------------------------------------------------------------------
 */
 
-Route::view('/', 'public.home')->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 /*
 |--------------------------------------------------------------------------
