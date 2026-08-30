@@ -27,7 +27,7 @@
         
         <h3>Contenido del sitio</h3>
         <ul class="menu-list">
-            <li><a href="#">Editar Inicio (Hero) y Contacto</a></li>
+            <li><a href="{{ route('admin.settings.edit') }}">Editar Inicio (Hero) y Contacto</a></li>
             <li><a href="#">Editar Servicios Principales (Órbita)</a></li>
             <li><a href="#">Editar Servicios Destacados</a></li>
             <li><a href="#">Editar Antes y Después</a></li>

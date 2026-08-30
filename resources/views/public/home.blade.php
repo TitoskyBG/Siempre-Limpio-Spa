@@ -93,7 +93,7 @@
 
                     <div class="hero-image">
                         <img
-                            src="{{ asset('assets/img/inicio/hero.webp') }}"
+                            src="{{ isset($settings['hero_image_path']) ? asset('storage/' . $settings['hero_image_path']) : asset('assets/img/inicio/hero.webp') }}"
                             alt="{{ $settings['hero_image_alt'] ?? 'Equipo de Siempre Limpio SPA realizando un servicio de limpieza' }}"
                             width="900"
                             height="675"
