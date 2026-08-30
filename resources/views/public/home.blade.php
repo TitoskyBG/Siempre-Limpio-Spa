@@ -197,28 +197,31 @@
                 <span class="tag">Nuestros servicios</span>
                 <h2>Servicios Principales que Ofrecemos</h2>
                 <p>
-                    Ofrecemos servicios de limpieza profesional ejecutados bajo los más altos 
-                    estándares de calidad, asegurando un entorno impecable y la máxima
-                    satisfacción en cada trabajo.
+                    {{ $settings['orbit_description'] ?? 'Ofrecemos servicios de limpieza profesional ejecutados bajo los más altos estándares de calidad, asegurando un entorno impecable y la máxima satisfacción en cada trabajo.' }}
                 </p>
             </div>
 
+            @php
+                // Rescatamos los servicios desde la base de datos (inyectados desde un View Composer o directamente aquí si usáramos lógica incrustada, pero para evitar errores en otras páginas, los llamaremos directamente)
+                $orbitServices = \App\Models\PrincipalService::all()->keyBy('position');
+            @endphp
+
             <div class="orbit-layout">
-                <a href="#cotizar" class="orbit-item js-cotizar-btn top-left" data-service="Aseo de casas">
-                    Aseo de Casas
+                <a href="#cotizar" class="orbit-item js-cotizar-btn top-left" data-service="{{ $orbitServices['top-left']->name ?? 'Aseo de Casas' }}">
+                    {{ $orbitServices['top-left']->name ?? 'Aseo de Casas' }}
                 </a>
-                <a href="#cotizar" class="orbit-item js-cotizar-btn top-right" data-service="Aseo en condominios">
-                    Aseo en Condominios
+                <a href="#cotizar" class="orbit-item js-cotizar-btn top-right" data-service="{{ $orbitServices['top-right']->name ?? 'Aseo en Condominios' }}">
+                    {{ $orbitServices['top-right']->name ?? 'Aseo en Condominios' }}
                 </a>
-                <a href="#cotizar" class="orbit-item js-cotizar-btn middle-left" data-service="Aseo en oficinas">
-                    Aseo en Oficinas
+                <a href="#cotizar" class="orbit-item js-cotizar-btn middle-left" data-service="{{ $orbitServices['middle-left']->name ?? 'Aseo en Oficinas' }}">
+                    {{ $orbitServices['middle-left']->name ?? 'Aseo en Oficinas' }}
                 </a>
 
                 <div class="orbit-center">
                     <div class="orbit-image large">
                         <img
-                            src="{{ asset('assets/img/orbita/orbita-servicios.webp') }}"
-                            alt="Equipo de Siempre Limpio SPA realizando un servicio de limpieza"
+                            src="{{ isset($settings['orbit_image_path']) ? asset('storage/' . $settings['orbit_image_path']) : asset('assets/img/orbita/orbita-servicios.webp') }}"
+                            alt="{{ $settings['orbit_image_alt'] ?? 'Equipo de Siempre Limpio SPA realizando un servicio de limpieza' }}"
                             width="650"
                             height="650"
                             loading="lazy"
@@ -226,14 +229,14 @@
                     </div>
                 </div>
 
-                <a href="#cotizar" class="orbit-item js-cotizar-btn middle-right" data-service="Lavado de tapicería">
-                    Lavado de Tapicería
+                <a href="#cotizar" class="orbit-item js-cotizar-btn middle-right" data-service="{{ $orbitServices['middle-right']->name ?? 'Lavado de Tapicería' }}">
+                    {{ $orbitServices['middle-right']->name ?? 'Lavado de Tapicería' }}
                 </a>
-                <a href="#cotizar" class="orbit-item js-cotizar-btn bottom-left" data-service="Aseo en gimnasios">
-                    Aseo en Gimnasios
+                <a href="#cotizar" class="orbit-item js-cotizar-btn bottom-left" data-service="{{ $orbitServices['bottom-left']->name ?? 'Aseo en Gimnasios' }}">
+                    {{ $orbitServices['bottom-left']->name ?? 'Aseo en Gimnasios' }}
                 </a>
-                <a href="#cotizar" class="orbit-item js-cotizar-btn bottom-right" data-service="Aseo en recintos educacionales">
-                    Aseo en Recintos Educacionales
+                <a href="#cotizar" class="orbit-item js-cotizar-btn bottom-right" data-service="{{ $orbitServices['bottom-right']->name ?? 'Aseo en Recintos Educacionales' }}">
+                    {{ $orbitServices['bottom-right']->name ?? 'Aseo en Recintos Educacionales' }}
                 </a>
             </div>
         </div>

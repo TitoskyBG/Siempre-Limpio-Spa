@@ -36,4 +36,6 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/settings', [App\Http\Controllers\Admin\SiteSettingController::class, 'edit'])->name('settings.edit');
     Route::post('/settings', [App\Http\Controllers\Admin\SiteSettingController::class, 'update'])->name('settings.update');
+    Route::get('/orbit', [App\Http\Controllers\Admin\PrincipalServiceController::class, 'edit'])->name('orbit.edit');
+    Route::post('/orbit', [App\Http\Controllers\Admin\PrincipalServiceController::class, 'update'])->name('orbit.update');
 });
