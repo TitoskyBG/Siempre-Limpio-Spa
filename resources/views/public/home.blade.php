@@ -116,7 +116,7 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
     {{-- ===================== EQUIPOS ===================== --}}
     <section class="section equipments section-tone-white" id="equipos">
