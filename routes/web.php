@@ -38,4 +38,7 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::post('/settings', [App\Http\Controllers\Admin\SiteSettingController::class, 'update'])->name('settings.update');
     Route::get('/orbit', [App\Http\Controllers\Admin\PrincipalServiceController::class, 'edit'])->name('orbit.edit');
     Route::post('/orbit', [App\Http\Controllers\Admin\PrincipalServiceController::class, 'update'])->name('orbit.update');
+    Route::get('/featured-services', [App\Http\Controllers\Admin\FeaturedServiceController::class, 'index'])->name('featured.index');
+    Route::get('/featured-services/{featuredService}/edit', [App\Http\Controllers\Admin\FeaturedServiceController::class, 'edit'])->name('featured.edit');
+    Route::put('/featured-services/{featuredService}', [App\Http\Controllers\Admin\FeaturedServiceController::class, 'update'])->name('featured.update');
 });

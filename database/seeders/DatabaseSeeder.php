@@ -148,7 +148,7 @@ class DatabaseSeeder extends Seeder
                 'images' => [
                     ['path' => 'assets/img/servicios-destacados/pisos/piso-cafe-despues.webp', 'alt' => 'Limpieza profesional de pisos flotantes y cerámicas', 'is_main' => true],
                     ['path' => 'assets/img/servicios-destacados/pisos/piso-cafe-antes.webp', 'alt' => 'Limpieza de piso cerámico', 'is_main' => false],
-                    ['path' => 'assets/img/servicios-destacados/pisos/pisos-flotante-limpio.webp', 'alt' => 'Lavado de piso flotante', 'is_main' => false],
+                    ['path' => 'assets/img/servicios-destacados/pisos/piso-flotante-limpio.webp', 'alt' => 'Lavado de piso flotante', 'is_main' => false],
                     ['path' => 'assets/img/servicios-destacados/pisos/piso-flotante-sucio.webp', 'alt' => 'Piso limpio después del servicio', 'is_main' => false],
                 ]
             ]
