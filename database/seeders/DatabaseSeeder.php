@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use App\Models\SiteSetting;
 use App\Models\PrincipalService;
 use App\Models\FeaturedService;
+use App\Models\BeforeAfterItem;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,12 +15,12 @@ class DatabaseSeeder extends Seeder
         // 1. Textos Generales (Etapa 1.1)
         SiteSetting::create(['key' => 'hero_tag', 'value' => 'Servicios de limpieza y mantención']);
         SiteSetting::create(['key' => 'hero_title', 'value' => 'Soluciones limpias, ordenadas y confiables para tu espacio.']);
-        SiteSetting::create(['key' => 'hero_description', 'value' => 'Siempre Limpio SPA entrega servicios de aseo, mantención y limpieza especializada...']);
+        SiteSetting::create(['key' => 'hero_description', 'value' => 'Siempre Limpio SPA entrega servicios de aseo, mantención y limpieza especializada para oficinas, espacios pequeños, vehículos, tapicerías y otras necesidades puntuales.']);
         SiteSetting::create(['key' => 'hero_image_caption', 'value' => 'Trabajamos con dedicación para entregar espacios limpios, frescos y listos para disfrutar.']);
         SiteSetting::create(['key' => 'hero_image_alt', 'value' => 'Equipo de Siempre Limpio SPA realizando un servicio de limpieza']);
         
         SiteSetting::create(['key' => 'contact_title', 'value' => 'Estamos listos para ayudarte']);
-        SiteSetting::create(['key' => 'contact_description', 'value' => 'Atendemos en Talca, Maule, Curicó, San Rafael, Linares y San Clemente...']);
+        SiteSetting::create(['key' => 'contact_description', 'value' => 'Atendemos en Talca, Maule, Curicó, San Rafael, Linares y San Clemente. Escríbenos por Instagram o completa el formulario de cotización.']);
         SiteSetting::create(['key' => 'contact_phone', 'value' => '+56 9 7712 2022']);
         SiteSetting::create(['key' => 'contact_instagram', 'value' => '@siemprelimpiospa']);
         SiteSetting::create(['key' => 'contact_hours_weekday', 'value' => 'Lunes a viernes 09:00 - 21:00 hrs']);
@@ -142,12 +143,12 @@ class DatabaseSeeder extends Seeder
                     'Tratamiento de manchas o zonas de mayor uso.',
                     'Aplicación de productos adecuados al material.',
                     'Fregado manual o mecánico según necesidad.',
-                    'Secado y revisión final de la terminación.' // Nota: el HTML original tiene 7 pasos aquí, omitiremos el 7mo visualmente si el límite estricto es 6, pero lo adaptamos a los primeros 6 para cumplir tu regla.
+                    'Secado y revisión final de la terminación.'
                 ],
                 'images' => [
                     ['path' => 'assets/img/servicios-destacados/pisos/piso-cafe-despues.webp', 'alt' => 'Limpieza profesional de pisos flotantes y cerámicas', 'is_main' => true],
                     ['path' => 'assets/img/servicios-destacados/pisos/piso-cafe-antes.webp', 'alt' => 'Limpieza de piso cerámico', 'is_main' => false],
-                    ['path' => 'assets/img/servicios-destacados/pisos/piso-flotante-limpio.webp', 'alt' => 'Lavado de piso flotante', 'is_main' => false],
+                    ['path' => 'assets/img/servicios-destacados/pisos/pisos-flotante-limpio.webp', 'alt' => 'Lavado de piso flotante', 'is_main' => false],
                     ['path' => 'assets/img/servicios-destacados/pisos/piso-flotante-sucio.webp', 'alt' => 'Piso limpio después del servicio', 'is_main' => false],
                 ]
             ]
@@ -170,6 +171,107 @@ class DatabaseSeeder extends Seeder
                     'alt_text' => $imageData['alt'],
                     'is_main' => $imageData['is_main'],
                 ]);
+            }
+        }
+
+        // 4. Comparadores Antes y Después (Etapa 1.3)
+        $beforeAfterItems = [
+            [
+                'tab_name' => 'Pisos', 'tab_target' => 'pisos', 'tag' => 'Lavado y encerado de pisos',
+                'title' => 'Pisos limpios, protegidos y con mejor brillo',
+                'description' => 'Recuperamos pisos con suciedad acumulada, manchas o pérdida de brillo. Adaptamos el tratamiento según el material y el estado de la superficie.',
+                'image_before_path' => 'assets/img/antes-despues/piso-azul-despues.webp',
+                'image_before_alt' => 'Piso después del servicio de limpieza',
+                'image_after_path' => 'assets/img/antes-despues/piso-azul-antes.webp',
+                'image_after_alt' => 'Piso antes del servicio de limpieza',
+                'steps' => [
+                    'Inspección del tipo y condición del piso.', 'Barrido y retiro de polvo o residuos.',
+                    'Aplicación de detergente desengrasante.', 'Fregado manual o mecánico según necesidad.',
+                    'Secado, revisión y aplicación de brillo si corresponde.'
+                ]
+            ],
+            [
+                'tab_name' => 'Cama', 'tab_target' => 'cama', 'tag' => 'Limpieza de camas',
+                'title' => 'Una base de cama más limpia y fresca',
+                'description' => 'Realizamos limpieza profunda de bases tapizadas para retirar polvo, suciedad, manchas y olores acumulados por el uso diario.',
+                'image_before_path' => 'assets/img/antes-despues/cama-despues.webp',
+                'image_before_alt' => 'Base de cama después de la limpieza',
+                'image_after_path' => 'assets/img/antes-despues/cama-antes.webp',
+                'image_after_alt' => 'Base de cama antes de la limpieza',
+                'steps' => [
+                    'Revisión del tapiz y zonas a tratar.', 'Aspirado profundo de toda la superficie.',
+                    'Tratamiento de manchas o suciedad localizada.', 'Aplicación de producto adecuado para la tela.',
+                    'Extracción de humedad y secado controlado.'
+                ]
+            ],
+            [
+                'tab_name' => 'Colchón', 'tab_target' => 'colchon', 'tag' => 'Limpieza de colchones',
+                'title' => 'Un colchón más limpio para descansar mejor',
+                'description' => 'Ayudamos a eliminar polvo, manchas, olores y suciedad acumulada para mejorar la higiene y frescura de tu espacio de descanso.',
+                'image_before_path' => 'assets/img/antes-despues/colchon-despues.webp',
+                'image_before_alt' => 'Colchón después de la limpieza',
+                'image_after_path' => 'assets/img/antes-despues/colchon-antes.webp',
+                'image_after_alt' => 'Colchón antes de la limpieza',
+                'steps' => [
+                    'Evaluación general del estado del colchón.', 'Aspirado profundo de la superficie.',
+                    'Revisión de manchas y zonas de mayor uso.', 'Aplicación de shampoo o producto especializado.',
+                    'Extracción de humedad y secado controlado.'
+                ]
+            ],
+            [
+                'tab_name' => 'Silla', 'tab_target' => 'silla', 'tag' => 'Limpieza de sillas',
+                'title' => 'Sillas renovadas para tu hogar u oficina',
+                'description' => 'Limpiamos sillas de comedor, oficina o espera para retirar polvo, manchas y suciedad acumulada en telas de uso frecuente.',
+                'image_before_path' => 'assets/img/antes-despues/silla-azul-despues.webp',
+                'image_before_alt' => 'Silla después de la limpieza',
+                'image_after_path' => 'assets/img/antes-despues/silla-azul-antes.webp',
+                'image_after_alt' => 'Silla antes de la limpieza',
+                'steps' => [
+                    'Evaluación del tapiz y tipo de material.', 'Aspirado profundo de la superficie.',
+                    'Tratamiento de manchas según la tela.', 'Aplicación de producto de limpieza especializado.',
+                    'Extracción, secado y revisión final.'
+                ]
+            ],
+            [
+                'tab_name' => 'Sofa', 'tab_target' => 'sofa', 'tag' => 'Limpieza de sofas',
+                'title' => 'Sofás más limpios, frescos y agradables',
+                'description' => 'Recuperamos muebles tapizados con manchas, olores o suciedad acumulada por el uso diario en hogares, oficinas y salas de espera.',
+                'image_before_path' => 'assets/img/antes-despues/sofa-gris-despues.webp',
+                'image_before_alt' => 'Sofá después de la limpieza',
+                'image_after_path' => 'assets/img/antes-despues/sofa-gris-antes.webp',
+                'image_after_alt' => 'Sofá antes de la limpieza',
+                'steps' => [
+                    'Evaluación del tipo de tela y estado del sofá.', 'Aspirado profundo de cojines y superficies.',
+                    'Tratamiento de manchas o zonas específicas.', 'Aplicación de producto adecuado al tapiz.',
+                    'Extracción de humedad, secado y revisión final.'
+                ]
+            ],
+            [
+                'tab_name' => 'Mueble', 'tab_target' => 'mueble', 'tag' => 'Limpieza de muebles',
+                'title' => 'Muebles renovados y listos para disfrutar',
+                'description' => 'Eliminamos suciedad profunda, grasa y polvo acumulado en clósets, repisas y muebles de cocina. Devuelve la higiene a tu hogar.',
+                'image_before_path' => 'assets/img/antes-despues/muebles-despues.webp',
+                'image_before_alt' => 'Mueble después de la limpieza',
+                'image_after_path' => 'assets/img/antes-despues/mueble-antes.webp',
+                'image_after_alt' => 'Mueble antes de la limpieza',
+                'steps' => [
+                    'Revisión del material y estado del mueble.', 'Retiro de suciedad suelta y residuos.',
+                    'Tratamiento de manchas, grasa y pegamento.', 'Aplicación de productos seguros según el material.',
+                    'Secado profundo y revisión final contigo.'
+                ]
+            ]
+        ];
+
+        foreach ($beforeAfterItems as $baData) {
+            $item = BeforeAfterItem::create([
+                'tab_name' => $baData['tab_name'], 'tab_target' => $baData['tab_target'],
+                'tag' => $baData['tag'], 'title' => $baData['title'], 'description' => $baData['description'],
+                'image_before_path' => $baData['image_before_path'], 'image_before_alt' => $baData['image_before_alt'],
+                'image_after_path' => $baData['image_after_path'], 'image_after_alt' => $baData['image_after_alt'],
+            ]);
+
+            foreach ($baData['steps'] as $stepDesc) {
+                $item->steps()->create(['description' => $stepDesc]);
             }
         }
     }
