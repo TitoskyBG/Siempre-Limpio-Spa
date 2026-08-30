@@ -19,9 +19,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 |--------------------------------------------------------------------------
 */
 
-Route::middleware('guest')->prefix('admin')->name('admin.')->group(function () {
+// Quitamos el name('admin.') de este grupo para que la ruta se llame exactamente 'login'
+Route::middleware('guest')->prefix('admin')->group(function () {
     Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
-    Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+    Route::post('/login', [AuthController::class, 'login'])->name('admin.login.submit');
 });
 
 /*
