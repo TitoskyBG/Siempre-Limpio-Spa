@@ -12,6 +12,9 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
+        // 0. Crear el usuario administrador siempre
+        $this->call(UserSeeder::class);
+
         // 1. Textos Generales (Etapa 1.1)
         SiteSetting::create(['key' => 'hero_tag', 'value' => 'Servicios de limpieza y mantención']);
         SiteSetting::create(['key' => 'hero_title', 'value' => 'Soluciones limpias, ordenadas y confiables para tu espacio.']);

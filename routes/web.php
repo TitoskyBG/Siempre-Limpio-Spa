@@ -41,4 +41,7 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/featured-services', [App\Http\Controllers\Admin\FeaturedServiceController::class, 'index'])->name('featured.index');
     Route::get('/featured-services/{featuredService}/edit', [App\Http\Controllers\Admin\FeaturedServiceController::class, 'edit'])->name('featured.edit');
     Route::put('/featured-services/{featuredService}', [App\Http\Controllers\Admin\FeaturedServiceController::class, 'update'])->name('featured.update');
+    Route::get('/before-after', [App\Http\Controllers\Admin\BeforeAfterController::class, 'index'])->name('before-after.index');
+    Route::get('/before-after/{beforeAfterItem}/edit', [App\Http\Controllers\Admin\BeforeAfterController::class, 'edit'])->name('before-after.edit');
+    Route::put('/before-after/{beforeAfterItem}', [App\Http\Controllers\Admin\BeforeAfterController::class, 'update'])->name('before-after.update');
 });
