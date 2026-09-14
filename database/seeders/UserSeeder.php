@@ -10,11 +10,25 @@ class UserSeeder extends Seeder
 {
     public function run(): void
     {
-        // Crea el usuario administrador por defecto
+        // Usuarios administradores del panel (dueño y colega)
         User::create([
-            'name' => 'Administrador',
-            'email' => 'admin@siemprelimpio.cl',
-            'password' => Hash::make('admin123'), // Contraseña encriptada de forma segura
+            'name' => 'Eduar',
+            'email' => 'eduar@siemprelimpiospa.cl',
+            'password' => Hash::make('Eduar123'),
+        ]);
+
+        User::create([
+            'name' => 'Dagoberto',
+            'email' => 'dagoberto@siemprelimpiospa.cl',
+            'password' => Hash::make('Dagoberto123'),
+        ]);
+
+        // Usuario del desarrollador para soporte/mantenimiento.
+        // TODO: cambiar o eliminar esta contraseña antes de pasar a producción.
+        User::create([
+            'name' => 'root',
+            'email' => 'root@siemprelimpiospa.cl',
+            'password' => Hash::make('Nomeacuerdo'),
         ]);
     }
 }
