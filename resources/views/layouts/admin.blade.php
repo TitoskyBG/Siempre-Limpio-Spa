@@ -28,10 +28,28 @@
             display: flex; flex-direction: column; padding: 1.5rem 0;
         }
         .admin-sidebar .brand {
-            display: flex; align-items: center; padding: 0 1.5rem 1.5rem;
+            display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem 1.5rem;
             border-bottom: 1px solid rgba(255,255,255,0.12); margin-bottom: 1rem;
         }
         .admin-sidebar .brand img { height: 40px; }
+
+        .admin-menu-toggle {
+            display: none; width: 42px; height: 42px; flex-shrink: 0; border: none; border-radius: 10px;
+            background: rgba(255,255,255,0.08); cursor: pointer; padding: 0; position: relative;
+        }
+        .admin-menu-toggle span {
+            position: absolute; left: 10px; width: 22px; height: 2.5px;
+            background: white; border-radius: 999px;
+            transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease;
+        }
+        .admin-menu-toggle span:nth-child(1) { top: 14px; }
+        .admin-menu-toggle span:nth-child(2) { top: 20px; }
+        .admin-menu-toggle span:nth-child(3) { top: 26px; }
+        .admin-menu-toggle.is-open span:nth-child(1) { top: 20px; transform: rotate(45deg); }
+        .admin-menu-toggle.is-open span:nth-child(2) { opacity: 0; }
+        .admin-menu-toggle.is-open span:nth-child(3) { top: 20px; transform: rotate(-45deg); }
+
+        .admin-nav-wrap { flex: 1; display: flex; flex-direction: column; min-height: 0; }
         .admin-nav { list-style: none; margin: 0; padding: 0; flex: 1; }
         .admin-nav a {
             display: block; padding: 0.9rem 1.5rem; color: rgba(255,255,255,0.75);
@@ -139,6 +157,19 @@
         @media (max-width: 780px) {
             .admin-shell { flex-direction: column; }
             .admin-sidebar { width: 100%; padding: 1rem 0; }
+            .admin-sidebar .brand { border-bottom: none; margin-bottom: 0; }
+            .admin-menu-toggle { display: block; }
+
+            .admin-nav-wrap {
+                max-height: 0; overflow: hidden;
+                transition: max-height 0.28s ease;
+            }
+            .admin-nav-wrap.is-open {
+                max-height: 480px;
+                border-top: 1px solid rgba(255,255,255,0.12);
+                margin-top: 1rem; padding-top: 0.5rem;
+            }
+
             .img-grid, .service-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -149,40 +180,45 @@
         <aside class="admin-sidebar">
             <div class="brand">
                 <img src="{{ asset('assets/img/logo/logo-nav.png') }}" alt="Siempre Limpio SPA">
+                <button class="admin-menu-toggle" id="admin-menu-toggle" type="button" aria-expanded="false" aria-controls="admin-nav-wrap" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
 
-            <ul class="admin-nav">
-                <li>
-                    <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'is-active' : '' }}">
-                        Inicio del panel
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('admin.settings.edit') }}" class="{{ request()->routeIs('admin.settings.*') ? 'is-active' : '' }}">
-                        Inicio y Contacto
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('admin.orbit.edit') }}" class="{{ request()->routeIs('admin.orbit.*') ? 'is-active' : '' }}">
-                        Servicios Principales
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('admin.featured.index') }}" class="{{ request()->routeIs('admin.featured.*') ? 'is-active' : '' }}">
-                        Servicios Destacados
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('admin.before-after.index') }}" class="{{ request()->routeIs('admin.before-after.*') ? 'is-active' : '' }}">
-                        Antes y Después
-                    </a>
-                </li>
-            </ul>
+            <div class="admin-nav-wrap" id="admin-nav-wrap">
+                <ul class="admin-nav">
+                    <li>
+                        <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'is-active' : '' }}">
+                            Inicio del panel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.settings.edit') }}" class="{{ request()->routeIs('admin.settings.*') ? 'is-active' : '' }}">
+                            Inicio y Contacto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.orbit.edit') }}" class="{{ request()->routeIs('admin.orbit.*') ? 'is-active' : '' }}">
+                            Servicios Principales
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.featured.index') }}" class="{{ request()->routeIs('admin.featured.*') ? 'is-active' : '' }}">
+                            Servicios Destacados
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.before-after.index') }}" class="{{ request()->routeIs('admin.before-after.*') ? 'is-active' : '' }}">
+                            Antes y Después
+                        </a>
+                    </li>
+                </ul>
 
-            <form action="{{ route('admin.logout') }}" method="POST" class="logout-form">
-                @csrf
-                <button type="submit" class="btn-logout">Cerrar sesión</button>
-            </form>
+                <form action="{{ route('admin.logout') }}" method="POST" class="logout-form">
+                    @csrf
+                    <button type="submit" class="btn-logout">Cerrar sesión</button>
+                </form>
+            </div>
         </aside>
 
         <main class="admin-content">
@@ -203,5 +239,7 @@
             @yield('content')
         </main>
     </div>
+
+    <script src="{{ asset('assets/js/admin/admin-menu.js') }}"></script>
 </body>
 </html>
