@@ -329,353 +329,89 @@
                 </p>
             </div>
 
+            @php
+                $beforeAfterItems = \App\Models\BeforeAfterItem::with('steps')->get();
+            @endphp
+
             {{-- Pestañas de comparación --}}
             <div class="ba-tabs" role="tablist" aria-label="Seleccionar servicio para comparar">
-                <button class="ba-tab is-active" role="tab" aria-selected="true" data-target="pisos" type="button">
-                    Pisos
-                </button>
-                <button class="ba-tab" role="tab" aria-selected="false" data-target="cama" type="button">
-                    Cama
-                </button>
-                <button class="ba-tab" role="tab" aria-selected="false" data-target="colchon" type="button">
-                    Colchón
-                </button>
-                <button class="ba-tab" role="tab" aria-selected="false" data-target="silla" type="button">
-                    Silla
-                </button>
-                <button class="ba-tab" role="tab" aria-selected="false" data-target="sofa" type="button">
-                    Sofa
-                </button>
-                <button class="ba-tab" role="tab" aria-selected="false" data-target="mueble" type="button">
-                    Mueble
-                </button>
+                @foreach($beforeAfterItems as $index => $baItem)
+                    <button
+                        class="ba-tab{{ $index === 0 ? ' is-active' : '' }}"
+                        role="tab"
+                        aria-selected="{{ $index === 0 ? 'true' : 'false' }}"
+                        data-target="{{ $baItem->tab_target }}"
+                        type="button"
+                    >
+                        {{ $baItem->tab_name }}
+                    </button>
+                @endforeach
             </div>
 
             <div class="ba-panels">
 
-                {{-- Panel: Pisos --}}
-                <div class="ba-panel is-active" id="pisos" data-service="pisos">
-                    <div class="ba-slider-wrap">
-                        <div class="ba-slider" data-before="Antes" data-after="Después">
-                            <img
-                                class="ba-image ba-image-before"
-                                src="{{ asset('assets/img/antes-despues/piso-azul-despues.webp') }}"
-                                alt="Piso después del servicio de limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
+                @foreach($beforeAfterItems as $index => $baItem)
+                    @php
+                        // Nota: la clase "ba-image-before" siempre debe recibir image_before_path
+                        // y "ba-image-after" siempre image_after_path. El slider (home.css) las
+                        // usa como capas de recorte (clip-path), no como orden cronológico: por
+                        // como está construido, image_before_path termina siendo la foto que se
+                        // ve bajo la etiqueta "Después" y image_after_path la que se ve bajo
+                        // "Antes". No inviertas este mapeo sin revisar home.css/before-after.js.
+                        $resolveImg = fn ($path) => $path && (str_starts_with($path, 'assets/') || filter_var($path, FILTER_VALIDATE_URL))
+                            ? asset($path)
+                            : asset('storage/' . $path);
+                    @endphp
+                    <div class="ba-panel{{ $index === 0 ? ' is-active' : '' }}" id="{{ $baItem->tab_target }}" data-service="{{ $baItem->tab_target }}">
+                        <div class="ba-slider-wrap">
+                            <div class="ba-slider" data-before="Antes" data-after="Después">
+                                <img
+                                    class="ba-image ba-image-before"
+                                    src="{{ $resolveImg($baItem->image_before_path) }}"
+                                    alt="{{ $baItem->image_before_alt }}"
+                                    width="800"
+                                    height="600"
+                                    loading="lazy"
+                                >
 
-                            <img
-                                class="ba-image ba-image-after"
-                                src="{{ asset('assets/img/antes-despues/piso-azul-antes.webp') }}"
-                                alt="Piso antes del servicio de limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-                            <div class="ba-divider"></div>
-                            <input
-                                type="range"
-                                class="ba-range"
-                                min="0"
-                                max="100"
-                                value="50"
-                                aria-label="Deslizar para comparar piso antes y después"
-                            >
+                                <img
+                                    class="ba-image ba-image-after"
+                                    src="{{ $resolveImg($baItem->image_after_path) }}"
+                                    alt="{{ $baItem->image_after_alt }}"
+                                    width="800"
+                                    height="600"
+                                    loading="lazy"
+                                >
+                                <div class="ba-divider"></div>
+                                <input
+                                    type="range"
+                                    class="ba-range"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Deslizar para comparar {{ strtolower($baItem->tab_name) }} antes y después"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="ba-info">
+                            <span class="tag">{{ $baItem->tag }}</span>
+                            <h3>{{ $baItem->title }}</h3>
+                            <p>
+                                {{ $baItem->description }}
+                            </p>
+
+                            <ol class="ba-steps">
+                                @foreach($baItem->steps as $step)
+                                    <li>{{ $step->description }}</li>
+                                @endforeach
+                            </ol>
+                            <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="{{ $baItem->tag }}">
+                                Cotizar este servicio
+                            </a>
                         </div>
                     </div>
-
-                    <div class="ba-info">
-                        <span class="tag">Lavado y encerado de pisos</span>
-                        <h3>Pisos limpios, protegidos y con mejor brillo</h3>
-                        <p>
-                            Recuperamos pisos con suciedad acumulada, manchas o pérdida de brillo.
-                            Adaptamos el tratamiento según el material y el estado de la superficie.
-                        </p>
-
-                        <ol class="ba-steps">
-                            <li>Inspección del tipo y condición del piso.</li>
-                            <li>Barrido y retiro de polvo o residuos.</li>
-                            <li>Aplicación de detergente desengrasante.</li>
-                            <li>Fregado manual o mecánico según necesidad.</li>
-                            <li>Secado, revisión y aplicación de brillo si corresponde.</li>
-                        </ol>
-                        <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Lavado y encerado de pisos">
-                            Cotizar este servicio
-                        </a>
-                    </div>
-                </div>
-
-                {{-- Panel: Cama --}}
-                <div class="ba-panel" id="cama" data-service="cama">
-                    <div class="ba-slider-wrap">
-                        <div class="ba-slider" data-before="Antes" data-after="Después">
-                            <img
-                                class="ba-image ba-image-before"
-                                src="{{ asset('assets/img/antes-despues/cama-despues.webp') }}"
-                                alt="Base de cama después de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-
-                            <img
-                                class="ba-image ba-image-after"
-                                src="{{ asset('assets/img/antes-despues/cama-antes.webp') }}"
-                                alt="Base de cama antes de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-                            <div class="ba-divider"></div>
-                            <input
-                                type="range"
-                                class="ba-range"
-                                min="0"
-                                max="100"
-                                value="50"
-                                aria-label="Deslizar para comparar cama antes y después"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="ba-info">
-                        <span class="tag">Limpieza de camas</span>
-                        <h3>Una base de cama más limpia y fresca</h3>
-                        <p>
-                            Realizamos limpieza profunda de bases tapizadas para retirar polvo,
-                            suciedad, manchas y olores acumulados por el uso diario.
-                        </p>
-
-                        <ol class="ba-steps">
-                            <li>Revisión del tapiz y zonas a tratar.</li>
-                            <li>Aspirado profundo de toda la superficie.</li>
-                            <li>Tratamiento de manchas o suciedad localizada.</li>
-                            <li>Aplicación de producto adecuado para la tela.</li>
-                            <li>Extracción de humedad y secado controlado.</li>
-                        </ol>
-                        <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de camas">
-                            Cotizar este servicio
-                        </a>
-                    </div>
-                </div>
-
-                {{-- Panel: Colchón --}}
-                <div class="ba-panel" id="colchon" data-service="colchon">
-                    <div class="ba-slider-wrap">
-                        <div class="ba-slider" data-before="Antes" data-after="Después">
-                            <img
-                                class="ba-image ba-image-before"
-                                src="{{ asset('assets/img/antes-despues/colchon-despues.webp') }}"
-                                alt="Colchón después de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-
-                            <img
-                                class="ba-image ba-image-after"
-                                src="{{ asset('assets/img/antes-despues/colchon-antes.webp') }}"
-                                alt="Colchón antes de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
->
-                            <div class="ba-divider"></div>
-                            <input
-                                type="range"
-                                class="ba-range"
-                                min="0"
-                                max="100"
-                                value="50"
-                                aria-label="Deslizar para comparar colchón antes y después"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="ba-info">
-                        <span class="tag">Limpieza de colchones</span>
-                        <h3>Un colchón más limpio para descansar mejor</h3>
-                        <p>
-                            Ayudamos a eliminar polvo, manchas, olores y suciedad acumulada para
-                            mejorar la higiene y frescura de tu espacio de descanso.
-                        </p>
-
-                        <ol class="ba-steps">
-                            <li>Evaluación general del estado del colchón.</li>
-                            <li>Aspirado profundo de la superficie.</li>
-                            <li>Revisión de manchas y zonas de mayor uso.</li>
-                            <li>Aplicación de shampoo o producto especializado.</li>
-                            <li>Extracción de humedad y secado controlado.</li>
-                        </ol>
-                        <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de colchones">
-                            Cotizar este servicio
-                        </a>
-                    </div>
-                </div>
-
-                {{-- Panel: Silla --}}
-                <div class="ba-panel" id="silla" data-service="silla">
-                    <div class="ba-slider-wrap">
-                        <div class="ba-slider" data-before="Antes" data-after="Después">
-                            <img
-                                class="ba-image ba-image-before"
-                                src="{{ asset('assets/img/antes-despues/silla-azul-despues.webp') }}"
-                                alt="Silla después de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-
-                            <img
-                                class="ba-image ba-image-after"
-                                src="{{ asset('assets/img/antes-despues/silla-azul-antes.webp') }}"
-                                alt="Silla antes de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-                            <div class="ba-divider"></div>
-                            <input
-                                type="range"
-                                class="ba-range"
-                                min="0"
-                                max="100"
-                                value="50"
-                                aria-label="Deslizar para comparar silla antes y después"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="ba-info">
-                        <span class="tag">Limpieza de sillas</span>
-                        <h3>Sillas renovadas para tu hogar u oficina</h3>
-                        <p>
-                            Limpiamos sillas de comedor, oficina o espera para retirar polvo,
-                            manchas y suciedad acumulada en telas de uso frecuente.
-                        </p>
-
-                        <ol class="ba-steps">
-                            <li>Evaluación del tapiz y tipo de material.</li>
-                            <li>Aspirado profundo de la superficie.</li>
-                            <li>Tratamiento de manchas según la tela.</li>
-                            <li>Aplicación de producto de limpieza especializado.</li>
-                            <li>Extracción, secado y revisión final.</li>
-                        </ol>
-                        <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sillas">
-                            Cotizar este servicio
-                        </a>
-                    </div>
-                </div>
-
-                {{-- Panel: Sofa --}}
-                <div class="ba-panel" id="sofa" data-service="sofa">
-                    <div class="ba-slider-wrap">
-                        <div class="ba-slider" data-before="Antes" data-after="Después">
-                            <img
-                                class="ba-image ba-image-before"
-                                src="{{ asset('assets/img/antes-despues/sofa-gris-despues.webp') }}"
-                                alt="Sofá después de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-
-                            <img
-                                class="ba-image ba-image-after"
-                                src="{{ asset('assets/img/antes-despues/sofa-gris-antes.webp') }}"
-                                alt="Sofá antes de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-                            <div class="ba-divider"></div>
-                            <input
-                                type="range"
-                                class="ba-range"
-                                min="0"
-                                max="100"
-                                value="50"
-                                aria-label="Deslizar para comparar Sofa antes y después"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="ba-info">
-                        <span class="tag">Limpieza de sofas</span>
-                        <h3>Sofás más limpios, frescos y agradables</h3>
-                        <p>
-                            Recuperamos muebles tapizados con manchas, olores o suciedad acumulada
-                            por el uso diario en hogares, oficinas y salas de espera.
-                        </p>
-
-                        <ol class="ba-steps">
-                            <li>Evaluación del tipo de tela y estado del sofá.</li>
-                            <li>Aspirado profundo de cojines y superficies.</li>
-                            <li>Tratamiento de manchas o zonas específicas.</li>
-                            <li>Aplicación de producto adecuado al tapiz.</li>
-                            <li>Extracción de humedad, secado y revisión final.</li>
-                        </ol>
-                        <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de sofas">
-                            Cotizar este servicio
-                        </a>
-                    </div>
-                </div>
-
-                {{-- Panel: Mueble --}}
-                <div class="ba-panel" id="mueble" data-service="mueble">
-                    <div class="ba-slider-wrap">
-                        <div class="ba-slider" data-before="Antes" data-after="Después">
-                            <img
-                                class="ba-image ba-image-before"
-                                src="{{ asset('assets/img/antes-despues/muebles-despues.webp') }}"
-                                alt="Mueble después de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-
-                            <img
-                                class="ba-image ba-image-after"
-                                src="{{ asset('assets/img/antes-despues/mueble-antes.webp') }}"
-                                alt="Mueble antes de la limpieza"
-                                width="800"
-                                height="600"
-                                loading="lazy"
-                            >
-                            <div class="ba-divider"></div>
-                            <input
-                                type="range"
-                                class="ba-range"
-                                min="0"
-                                max="100"
-                                value="50"
-                                aria-label="Deslizar para comparar mueble antes y después"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="ba-info">
-                        <span class="tag">Limpieza de muebles</span>
-                        <h3>Muebles renovados y listos para disfrutar</h3>
-                        <p>
-                             Eliminamos suciedad profunda, grasa y polvo acumulado en clósets,
-                            repisas y muebles de cocina. Devuelve la higiene a tu hogar.
-                        </p>
-
-                        <ol class="ba-steps">
-                            <li>Revisión del material y estado del mueble.</li>
-                            <li>Retiro de suciedad suelta y residuos.</li>
-                            <li>Tratamiento de manchas, grasa y pegamento.</li>
-                            <li>Aplicación de productos seguros según el material.</li>
-                            <li>Secado profundo y revisión final contigo.</li>
-                        </ol>
-                        <a href="#cotizar" class="btn btn-primary js-cotizar-btn" data-service="Limpieza de muebles">
-                            Cotizar este servicio
-                        </a>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
         </div>
@@ -821,4 +557,3 @@
 <script src="{{ asset('assets/js/public/featured-gallery.js') }}"></script>
 
 </body>
-</html>
