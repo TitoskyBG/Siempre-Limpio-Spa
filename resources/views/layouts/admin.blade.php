@@ -78,7 +78,7 @@
         .field { margin-bottom: 1.5rem; display: flex; flex-direction: column; }
         label { font-weight: bold; margin-bottom: 0.5rem; color: var(--color-text); }
         .field-hint { font-weight: normal; color: var(--color-text-soft); font-size: 0.82rem; margin: 0.4rem 0 0; line-height: 1.4; }
-        input[type="text"], input[type="file"], textarea {
+        input[type="text"], input[type="password"], input[type="file"], textarea {
             padding: 0.8rem; border: 1px solid var(--color-border); border-radius: 8px; font-family: inherit; font-size: 1rem;
         }
         input:focus, textarea:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(77,187,233,0.15); }
@@ -100,6 +100,36 @@
         }
         .btn-cancel:hover { color: var(--color-text); }
 
+        .account-card {
+            display: flex; align-items: center; gap: 1.1rem;
+            background: white; border: 1px solid var(--color-border); border-radius: 14px;
+            padding: 1.4rem 1.6rem; margin-bottom: 1.8rem;
+        }
+        .account-avatar {
+            width: 54px; height: 54px; border-radius: 50%; flex-shrink: 0;
+            background: linear-gradient(145deg, var(--color-primary), var(--color-primary-dark));
+            color: white; font-weight: bold; font-size: 1.35rem;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .account-name { margin: 0; font-weight: bold; color: var(--color-text); font-size: 1.05rem; }
+        .account-email { margin: 0.2rem 0 0; color: var(--color-text-soft); font-size: 0.88rem; }
+
+        .password-card { max-width: 480px; }
+        .field-divider { border: none; border-top: 1px solid var(--color-border); margin: 0.3rem 0 1.6rem; }
+
+        .show-password-toggle {
+            display: flex; align-items: center; gap: 0.55rem; font-weight: normal; font-size: 0.88rem;
+            color: var(--color-text-soft); margin: -0.6rem 0 0.5rem; cursor: pointer; user-select: none;
+        }
+        .show-password-toggle input { width: auto; margin: 0; accent-color: var(--color-primary); cursor: pointer; }
+
+        .security-tip {
+            background: var(--color-surface); border-left: 3px solid var(--color-accent);
+            padding: 0.9rem 1.1rem; border-radius: 0 8px 8px 0; font-size: 0.85rem;
+            color: var(--color-text-soft); line-height: 1.5; margin: 1.4rem 0 0;
+        }
+        .security-tip strong { color: var(--color-text); }
+
         .form-card {
             background: white; border: 1px solid var(--color-border); border-radius: 14px;
             padding: 1.6rem; margin-bottom: 1.8rem;
@@ -120,6 +150,35 @@
             flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--color-primary);
             color: white; display: flex; align-items: center; justify-content: center;
             font-weight: bold; font-size: 0.85rem; margin-top: 0.35rem;
+        }
+
+        .orbit-map {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "tl . tr" "ml cc mr" "bl . br";
+            gap: 1.2rem; align-items: center;
+        }
+        .orbit-map .orbit-center {
+            grid-area: cc; aspect-ratio: 1; border-radius: 50%;
+            background: var(--color-surface); border: 2px dashed var(--color-border);
+            color: var(--color-text-soft); font-size: 0.78rem; font-weight: bold; text-align: center;
+            display: flex; align-items: center; justify-content: center; padding: 0.6rem;
+        }
+        @media (max-width: 640px) {
+            .orbit-map { grid-template-columns: 1fr; grid-template-areas: "tl" "tr" "ml" "cc" "mr" "bl" "br"; }
+        }
+
+        .schedule-grid { display: flex; flex-direction: column; gap: 0.8rem; }
+        .schedule-row {
+            display: flex; align-items: center; gap: 1rem; background: var(--color-surface);
+            border: 1px solid var(--color-border); border-radius: 8px; padding: 0.7rem 1rem;
+        }
+        .schedule-row .schedule-day {
+            flex-shrink: 0; width: 140px; font-weight: bold; color: var(--color-primary-deep); font-size: 0.88rem;
+        }
+        .schedule-row input { flex: 1; margin: 0; background: white; }
+        @media (max-width: 480px) {
+            .schedule-row { flex-direction: column; align-items: stretch; }
+            .schedule-row .schedule-day { width: auto; }
         }
 
         .img-group { background: var(--color-surface); padding: 1.1rem; border: 1px solid var(--color-border); border-radius: 10px; margin-bottom: 1rem; }
@@ -193,8 +252,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('admin.settings.edit') }}" class="{{ request()->routeIs('admin.settings.*') ? 'is-active' : '' }}">
-                            Inicio y Contacto
+                        <a href="{{ route('admin.home.edit') }}" class="{{ request()->routeIs('admin.home.*') ? 'is-active' : '' }}">
+                            Inicio
                         </a>
                     </li>
                     <li>
@@ -210,6 +269,16 @@
                     <li>
                         <a href="{{ route('admin.before-after.index') }}" class="{{ request()->routeIs('admin.before-after.*') ? 'is-active' : '' }}">
                             Antes y Después
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.contact.edit') }}" class="{{ request()->routeIs('admin.contact.*') ? 'is-active' : '' }}">
+                            Contacto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.profile.edit') }}" class="{{ request()->routeIs('admin.profile.*') ? 'is-active' : '' }}">
+                            Mi cuenta
                         </a>
                     </li>
                 </ul>
@@ -241,5 +310,6 @@
     </div>
 
     <script src="{{ asset('assets/js/admin/admin-menu.js') }}"></script>
+    @stack('scripts')
 </body>
 </html>

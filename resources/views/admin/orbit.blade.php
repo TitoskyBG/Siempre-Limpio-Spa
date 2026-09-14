@@ -37,15 +37,28 @@
         <div class="form-card">
             <h3 class="section-title">Los 6 servicios del círculo</h3>
             <p class="field-hint" style="margin-top: -0.6rem; margin-bottom: 1.2rem;">
-                Cada nombre aparece en una de las 6 posiciones fijas alrededor del centro.
+                Cada nombre aparece en la misma posición que ves aquí, alrededor del centro.
             </p>
-            <div class="service-grid">
-                @foreach(['top-left' => 'Arriba Izquierda', 'top-right' => 'Arriba Derecha', 'middle-left' => 'Medio Izquierda', 'middle-right' => 'Medio Derecha', 'bottom-left' => 'Abajo Izquierda', 'bottom-right' => 'Abajo Derecha'] as $pos => $label)
-                    <div class="field">
-                        <label>{{ $label }}</label>
+
+            @php
+                $positions = [
+                    'top-left' => ['label' => 'Arriba Izquierda', 'area' => 'tl'],
+                    'top-right' => ['label' => 'Arriba Derecha', 'area' => 'tr'],
+                    'middle-left' => ['label' => 'Medio Izquierda', 'area' => 'ml'],
+                    'middle-right' => ['label' => 'Medio Derecha', 'area' => 'mr'],
+                    'bottom-left' => ['label' => 'Abajo Izquierda', 'area' => 'bl'],
+                    'bottom-right' => ['label' => 'Abajo Derecha', 'area' => 'br'],
+                ];
+            @endphp
+
+            <div class="orbit-map">
+                @foreach($positions as $pos => $meta)
+                    <div class="field" style="grid-area: {{ $meta['area'] }}; margin-bottom: 0;">
+                        <label>{{ $meta['label'] }}</label>
                         <input type="text" name="services[{{ $pos }}]" value="{{ old('services.'.$pos, $services[$pos]->name ?? '') }}" required>
                     </div>
                 @endforeach
+                <div class="orbit-center">Centro</div>
             </div>
         </div>
 

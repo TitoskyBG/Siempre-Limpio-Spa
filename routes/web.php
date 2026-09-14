@@ -42,8 +42,8 @@ Route::middleware('guest')->prefix('admin')->group(function () {
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-    Route::get('/settings', [App\Http\Controllers\Admin\SiteSettingController::class, 'edit'])->name('settings.edit');
-    Route::post('/settings', [App\Http\Controllers\Admin\SiteSettingController::class, 'update'])->name('settings.update');
+    Route::get('/inicio', [App\Http\Controllers\Admin\HomeContentController::class, 'edit'])->name('home.edit');
+    Route::post('/inicio', [App\Http\Controllers\Admin\HomeContentController::class, 'update'])->name('home.update');
     Route::get('/orbit', [App\Http\Controllers\Admin\PrincipalServiceController::class, 'edit'])->name('orbit.edit');
     Route::post('/orbit', [App\Http\Controllers\Admin\PrincipalServiceController::class, 'update'])->name('orbit.update');
     Route::get('/featured-services', [App\Http\Controllers\Admin\FeaturedServiceController::class, 'index'])->name('featured.index');
@@ -52,4 +52,8 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/before-after', [App\Http\Controllers\Admin\BeforeAfterController::class, 'index'])->name('before-after.index');
     Route::get('/before-after/{beforeAfterItem}/edit', [App\Http\Controllers\Admin\BeforeAfterController::class, 'edit'])->name('before-after.edit');
     Route::put('/before-after/{beforeAfterItem}', [App\Http\Controllers\Admin\BeforeAfterController::class, 'update'])->name('before-after.update');
+    Route::get('/contacto', [App\Http\Controllers\Admin\ContactController::class, 'edit'])->name('contact.edit');
+    Route::post('/contacto', [App\Http\Controllers\Admin\ContactController::class, 'update'])->name('contact.update');
+    Route::get('/mi-cuenta', [App\Http\Controllers\Admin\ProfileController::class, 'edit'])->name('profile.edit');
+    Route::put('/mi-cuenta/password', [App\Http\Controllers\Admin\ProfileController::class, 'updatePassword'])->name('profile.password.update');
 });
