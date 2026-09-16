@@ -12,9 +12,9 @@ class UserSeeder extends Seeder
     {
         // Usuarios administradores del panel (dueño y colega)
         User::create([
-            'name' => 'Eduar',
-            'email' => 'eduar@siemprelimpiospa.cl',
-            'password' => Hash::make('Eduar123'),
+            'name' => 'Edwar',
+            'email' => 'Edwar@siemprelimpiospa.cl',
+            'password' => Hash::make('Edwar123'),
         ]);
 
         User::create([

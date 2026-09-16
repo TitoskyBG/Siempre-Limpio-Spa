@@ -3,6 +3,8 @@
 @section('title', 'Iniciar sesión')
 
 @section('content')
+    <a href="{{ route('home') }}" class="btn-back-home">&larr; Volver a la página principal</a>
+
     <h2>Panel de Administración</h2>
     <p class="auth-subtitle">Ingresa con tu correo corporativo</p>
 

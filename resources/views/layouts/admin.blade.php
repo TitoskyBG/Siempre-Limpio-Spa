@@ -26,6 +26,7 @@
         .admin-sidebar {
             width: 260px; flex-shrink: 0; background: var(--color-text); color: white;
             display: flex; flex-direction: column; padding: 1.5rem 0;
+            position: sticky; top: 0; align-self: flex-start; height: 100vh; overflow-y: auto;
         }
         .admin-sidebar .brand {
             display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem 1.5rem;
@@ -215,7 +216,7 @@
 
         @media (max-width: 780px) {
             .admin-shell { flex-direction: column; }
-            .admin-sidebar { width: 100%; padding: 1rem 0; }
+            .admin-sidebar { width: 100%; padding: 1rem 0; position: static; height: auto; overflow-y: visible; }
             .admin-sidebar .brand { border-bottom: none; margin-bottom: 0; }
             .admin-menu-toggle { display: block; }
 

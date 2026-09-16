@@ -45,6 +45,12 @@
         .auth-links { text-align: center; margin-top: 1.2rem; font-size: 0.9rem; }
         .auth-links a { color: var(--color-primary-dark); text-decoration: none; font-weight: bold; }
         .auth-links a:hover { text-decoration: underline; }
+        .btn-back-home {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            color: var(--color-text-soft); text-decoration: none; font-size: 0.85rem; font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        .btn-back-home:hover { color: var(--color-primary-dark); }
         .alert-error { background: #f8d7da; color: #721c24; padding: 0.9rem; border-radius: 8px; margin-bottom: 1.2rem; font-size: 0.9rem; }
         .alert-success { background: #d4edda; color: #155724; padding: 0.9rem; border-radius: 8px; margin-bottom: 1.2rem; font-size: 0.9rem; }
     </style>
