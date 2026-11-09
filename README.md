@@ -1,59 +1,115 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/assets/img/logo/logo-nav.png" alt="Siempre Limpio SPA" width="260">
 </p>
 
-## About Laravel
+<h1 align="center">Siempre Limpio SPA</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  Sitio web y panel de administración para una pyme de aseo y limpieza, construido en <strong>Laravel 12</strong>.
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-%5E8.2-777BB4?logo=php&logoColor=white" alt="PHP ^8.2">
+  <img src="https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white" alt="Laravel 12">
+  <img src="https://img.shields.io/badge/MySQL%2FMariaDB-compatible-4479A1?logo=mysql&logoColor=white" alt="MySQL/MariaDB">
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Sobre el proyecto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Siempre Limpio SPA ofrece servicios de aseo, mantención y limpieza especializada (hogares, oficinas, vehículos, tapicerías, etc.) en la región del Maule, Chile. Este repositorio contiene:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Sitio público**: landing page con portada, equipos y herramientas, servicios principales, servicios destacados, comparadores "antes y después", formulario de cotización y datos de contacto.
+- **Panel de administración**: permite al dueño del negocio editar todo el contenido del sitio (textos, imágenes y servicios) sin tocar código, desde una interfaz pensada para alguien sin experiencia técnica.
 
-## Laravel Sponsors
+Todo el contenido del sitio público (textos, imágenes, servicios destacados, comparadores antes/después) se administra desde la base de datos a través del panel — no hace falta editar archivos para actualizar la página.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Funcionalidades
 
-### Premium Partners
+### Sitio público
+- Portada (hero) con texto e imagen editables.
+- Sección de equipos y herramientas de trabajo.
+- "Servicios Principales" en disposición circular (órbita), con los 6 servicios y la imagen central editables.
+- "Servicios Destacados": galería con foto principal, miniaturas, pasos del proceso y descripción, por servicio.
+- "Antes y Después": comparador deslizante de imágenes por tipo de servicio, con pasos y descripción.
+- Formulario de cotización con autocompletado del servicio según el botón "Cotizar" presionado.
+- Sección de contacto con teléfono, Instagram y horario de atención.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Panel de administración (`/admin`)
+- Login con autenticación de sesión, protegido con middleware `auth`.
+- Recuperación de contraseña por correo ("¿Olvidaste tu contraseña?") y cambio de contraseña desde el propio panel ("Mi cuenta").
+- Dashboard con menú lateral fijo (colapsa a menú hamburguesa en pantallas chicas) con una sección por cada parte editable del sitio: Inicio, Servicios Principales, Servicios Destacados, Antes y Después, Contacto.
+- Edición de textos e imágenes con vista previa, validación de formato/tamaño de archivos (máx. 5MB) y reemplazo seguro de imágenes anteriores.
+- Diseño pensado para un usuario no técnico: explicaciones simples bajo cada campo, listados con miniaturas en vez de solo texto, y un mapa visual para los 6 servicios de la órbita.
 
-## Contributing
+## Stack técnico
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Backend:** Laravel 12 (PHP ^8.2)
+- **Base de datos:** MySQL / MariaDB (vía Eloquent ORM)
+- **Frontend público:** HTML + CSS + JavaScript nativo (sin framework de frontend ni build de Vite)
+- **Almacenamiento de imágenes:** disco `public` de Laravel (`storage:link`)
+- **Autenticación:** sesiones de Laravel, con recuperación de contraseña vía `password_reset_tokens`
 
-## Code of Conduct
+## Requisitos
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- PHP 8.2 o superior
+- Composer
+- MySQL o MariaDB
+- Node.js (opcional; el sitio público no depende de un build de assets)
 
-## Security Vulnerabilities
+## Instalación local
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/TitoskyBG/Siempre-Limpio-Spa.git
+cd Siempre-Limpio-Spa
 
-## License
+# 2. Instalar dependencias
+composer install
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# 3. Configurar el entorno
+cp .env.example .env
+php artisan key:generate
+
+# 4. Configurar la base de datos en .env (DB_DATABASE, DB_USERNAME, DB_PASSWORD)
+
+# 5. Ejecutar migraciones y poblar datos iniciales
+php artisan migrate
+php artisan db:seed
+
+# 6. Enlazar el almacenamiento público (para imágenes subidas desde el panel)
+php artisan storage:link
+
+# 7. Levantar el servidor de desarrollo
+php artisan serve
+```
+
+El sitio público queda disponible en `http://localhost:8000` y el panel de administración en `http://localhost:8000/admin/login`.
+
+> **Nota de seguridad:** los usuarios administradores se crean en `database/seeders/UserSeeder.php`. Antes de desplegar a producción, cambia las contraseñas por defecto y revisa que no quede ninguna cuenta de desarrollo/prueba activa.
+
+## Estructura relevante
+
+```
+app/Http/Controllers/Admin/   Controladores del panel (uno por sección editable)
+app/Models/                   Modelos Eloquent (SiteSetting, FeaturedService, BeforeAfterItem, etc.)
+database/migrations/          Esquema de base de datos
+database/seeders/              Datos iniciales (usuarios, textos, servicios)
+resources/views/admin/         Vistas del panel de administración
+resources/views/public/        Vista de la landing page pública
+resources/views/layouts/       Layouts compartidos (admin, auth)
+public/assets/                 CSS, JS e imágenes estáticas del sitio público
+routes/web.php                 Rutas públicas y del panel admin
+```
+
+## Estado del proyecto
+
+- ✅ Panel de administración completo (Inicio, Servicios Principales, Servicios Destacados, Antes y Después, Contacto, Mi cuenta).
+- ✅ Autenticación, recuperación y cambio de contraseña.
+- ⏳ Envío real del formulario de cotización (pendiente de credenciales SMTP del correo corporativo).
+- ⏳ Despliegue a producción (dominio y hosting).
+
+## Licencia
+
+Este proyecto es privado y fue desarrollado a medida para Siempre Limpio SPA.
